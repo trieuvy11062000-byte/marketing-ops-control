@@ -1,0 +1,13 @@
+import { getDb } from "../src/lib/db/client";
+const db = getDb();
+console.log("distinct campaigns with control tasks:");
+console.log(db.prepare(`SELECT COUNT(DISTINCT d.campaign_id) c FROM control_tasks ct JOIN deliverables d ON d.id=ct.deliverable_id`).get());
+console.log("campaigns overall:", db.prepare("SELECT COUNT(*) c FROM campaigns").get());
+console.log("deliverables per campaign distribution (top 10 largest):");
+console.log(db.prepare(`SELECT campaign_id, COUNT(*) c FROM deliverables GROUP BY campaign_id ORDER BY c DESC LIMIT 10`).all());
+console.log("sample campaign row:");
+console.log(db.prepare("SELECT * FROM campaigns LIMIT 3").all());
+console.log("sample control_task full row:");
+console.log(db.prepare("SELECT * FROM control_tasks LIMIT 2").all());
+console.log("sample deliverable full row:");
+console.log(db.prepare("SELECT * FROM deliverables LIMIT 2").all());

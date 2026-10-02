@@ -1,0 +1,80 @@
+@import "tailwindcss";
+@source not "../../data/**";
+
+:root {
+  --background: #0c0c0c;
+  --surface: #131313;
+  --foreground: #d7e2ea;
+  --foreground-muted: #8a95a0;
+  --glass-border: rgba(255, 255, 255, 0.12);
+  --glass-surface: rgba(255, 255, 255, 0.05);
+  --glass-surface-strong: rgba(255, 255, 255, 0.08);
+  --accent-grad-start: #646973;
+  --accent-grad-end: #bbccd7;
+
+  --red: #ef5b5b;
+  --red-bg: rgba(239, 91, 91, 0.12);
+  --amber: #e8a94a;
+  --amber-bg: rgba(232, 169, 74, 0.12);
+  --green: #56c98a;
+  --green-bg: rgba(86, 201, 138, 0.12);
+  --blue-grey: #7c98b6;
+  --blue-grey-bg: rgba(124, 152, 182, 0.12);
+  --grey: #5c6470;
+  --grey-bg: rgba(92, 100, 112, 0.1);
+
+  --font-mono-stack: ui-monospace, "SFMono-Regular", "Cascadia Code", "Consolas", monospace;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-surface: var(--surface);
+  --color-foreground: var(--foreground);
+  --color-foreground-muted: var(--foreground-muted);
+  --color-glass-border: var(--glass-border);
+  --color-glass-surface: var(--glass-surface);
+  --color-red: var(--red);
+  --color-amber: var(--amber);
+  --color-green: var(--green);
+  --color-blue-grey: var(--blue-grey);
+  --color-grey: var(--grey);
+  --font-sans: var(--font-kanit);
+  --font-mono: var(--font-mono-stack);
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-kanit), sans-serif;
+}
+
+.font-mono-tag {
+  font-family: var(--font-mono-stack), ui-monospace, monospace;
+  letter-spacing: 0.02em;
+}
+
+.glass {
+  background: var(--glass-surface);
+  border: 1px solid var(--glass-border);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+}
+
+.glass-strong {
+  background: var(--glass-surface-strong);
+  border: 1px solid var(--glass-border);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.14);
+  border-radius: 4px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
