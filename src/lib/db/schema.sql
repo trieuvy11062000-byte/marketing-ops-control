@@ -9,7 +9,7 @@ CREATE TABLE IF NOT EXISTS weeks (
   week_code TEXT PRIMARY KEY,        -- 'W40'
   year INTEGER NOT NULL,
   week_number INTEGER NOT NULL,
-  start_date TEXT NOT NULL,          -- ISO date, Friday (Longdan retail week)
+  start_date TEXT NOT NULL,          -- ISO date, Friday (LGD retail week)
   end_date TEXT NOT NULL,            -- ISO date, Thursday
   month TEXT NOT NULL,               -- 'October'
   quarter TEXT NOT NULL,             -- 'Q4'
@@ -23,7 +23,7 @@ CREATE TABLE IF NOT EXISTS brands (
 );
 
 -- CAMPAIGN: the orchestration parent. NOT a promotion, NOT an A&P record.
--- brand_id is nullable: many Longdan campaigns (Monthly, Clearance, storewide Golden
+-- brand_id is nullable: many LGD campaigns (Monthly, Clearance, storewide Golden
 -- Week) span every brand at once rather than belonging to one brand.
 CREATE TABLE IF NOT EXISTS campaigns (
   id TEXT PRIMARY KEY,               -- derived: {campaign_type}-{month_token}, e.g. "MO-Oct26"
@@ -87,7 +87,7 @@ CREATE TABLE IF NOT EXISTS deliverables (
   subtype TEXT NOT NULL,             -- Demo | POSM | TVC | Banner | Enews | Social | Website | Email | ...
   sku_code TEXT,
   sku_name TEXT,
-  location TEXT,                     -- shop/area for in-store items, e.g. "Longdan Maidstone"
+  location TEXT,                     -- shop/area for in-store items, e.g. "LGD Maidstone"
   session_label TEXT,                -- time slot / ca, e.g. "11:30–15:00"
   pic_role TEXT,                     -- Retail Marketing | Digital Marketing | A&P Marketing
   raw_owner TEXT,                    -- individual name/team text found in source, kept for traceability only
@@ -134,7 +134,7 @@ CREATE TABLE IF NOT EXISTS ap_packages (
   period_start TEXT,
   period_end TEXT,
   total_value REAL,                  -- only populated when source data has it
-  longdan_fund REAL,
+  lgd_fund REAL,
   brand_investment REAL,
   status TEXT NOT NULL DEFAULT 'IN DELIVERY', -- IN DELIVERY | COMPLETED | AWAITING PROPOSAL
   source_file TEXT NOT NULL,
@@ -281,7 +281,7 @@ CREATE TABLE IF NOT EXISTS design_briefs (
   campaign_name TEXT,
   brand_id TEXT REFERENCES brands(id),
   campaign_id TEXT REFERENCES campaigns(id),
-  campaign_type TEXT,                -- Monthly Campaign | Golden Week | Double Date | Longdan Plus | Demo/Tasting | Brand Campaign | A&P Brand Activity | Gondola/Fixture | Promotion | Landing Page | Email/eNews | Other | NEEDS MAPPING
+  campaign_type TEXT,                -- Monthly Campaign | Golden Week | Double Date | LGD Plus | Demo/Tasting | Brand Campaign | A&P Brand Activity | Gondola/Fixture | Promotion | Landing Page | Email/eNews | Other | NEEDS MAPPING
   theme TEXT,
   cuisine TEXT,
   period_start TEXT,
@@ -614,7 +614,7 @@ CREATE TABLE IF NOT EXISTS master_coverage_terms (
   sort_order INTEGER NOT NULL DEFAULT 0
 );
 
--- 2. Campaign Knowledge — the Longdan campaign taxonomy and timing rules.
+-- 2. Campaign Knowledge — the LGD campaign taxonomy and timing rules.
 CREATE TABLE IF NOT EXISTS master_campaign_types (
   id TEXT PRIMARY KEY,
   name TEXT NOT NULL,             -- 'Monthly Campaign' | 'Golden Week' | ...
@@ -755,7 +755,7 @@ CREATE TABLE IF NOT EXISTS project_funding (
   funding_label TEXT NOT NULL,       -- 'aT Korea Funding' | 'Hosan-owned Funding — Ambient' | ...
   amount TEXT,                       -- kept as text — source gives "USD 26,531 ±5%" style values
   currency TEXT,
-  flow TEXT,                         -- e.g. "aT Korea -> Hosan -> Longdan"
+  flow TEXT,                         -- e.g. "aT Korea -> Hosan -> LGD"
   contribution_note TEXT,            -- e.g. "Refund/Contribution: 10%"
   status TEXT NOT NULL DEFAULT 'CONFIRMED', -- CONFIRMED | WORKING | TO CONFIRM
   sort_order INTEGER NOT NULL DEFAULT 0

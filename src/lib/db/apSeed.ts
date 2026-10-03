@@ -17,7 +17,7 @@ export function seedApExamples(db: Database.Database): void {
     period_start: null,
     period_end: null,
     total_value: null,
-    longdan_fund: null,
+    lgd_fund: null,
     brand_investment: null,
     status: "AWAITING PROPOSAL",
     source_file: SOURCE,

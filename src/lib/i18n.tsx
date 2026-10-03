@@ -1,7 +1,7 @@
 import { cookies } from "next/headers";
 
 export type Lang = "en" | "vi";
-export const LANG_COOKIE = "longdan_lang";
+export const LANG_COOKIE = "lgd_lang";
 
 /** Reads the visitor's language preference from a cookie — defaults to English.
  *  Server Components call this once per page and pass `lang` down; nothing

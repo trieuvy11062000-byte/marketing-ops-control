@@ -7,7 +7,7 @@ import type { Lang } from "@/lib/i18n";
 function quickCards(lang: Lang) {
   return [
     { href: "/master/services", icon: FileSpreadsheet, label: ts(lang, "Services & Rates", "Dịch vụ & Bảng giá"), desc: ts(lang, "2026 / 2027 rate card — Campaign, In-store, Demo, Digital, Premium Packages, POSM", "Bảng giá 2026 / 2027 — Campaign, In-store, Demo, Digital, Premium Packages, POSM") },
-    { href: "/master/campaigns", icon: Megaphone, label: ts(lang, "Campaign Rules", "Quy tắc Campaign"), desc: ts(lang, "Longdan campaign taxonomy — Monthly, Golden Week, Branded Week, Double Date...", "Phân loại chiến dịch Longdan — Monthly, Golden Week, Branded Week, Double Date...") },
+    { href: "/master/campaigns", icon: Megaphone, label: ts(lang, "Campaign Rules", "Quy tắc Campaign"), desc: ts(lang, "LGD campaign taxonomy — Monthly, Golden Week, Branded Week, Double Date...", "Phân loại chiến dịch LGD — Monthly, Golden Week, Branded Week, Double Date...") },
     { href: "/master/calendar", icon: Calendar, label: ts(lang, "Annual Calendar", "Lịch năm"), desc: ts(lang, "Reference campaign calendar — theme, timing, hero category per month", "Lịch chiến dịch tham khảo — chủ đề, thời gian, ngành hàng chính theo tháng") },
     { href: "/master/ap-playbook", icon: ClipboardList, label: ts(lang, "A&P Playbook", "Playbook A&P"), desc: "Brief → Verify → Select → Budget → Forecast → Proposal → QA" },
     { href: "/master/operations", icon: BookOpen, label: ts(lang, "Operations", "Vận hành"), desc: ts(lang, "Workflow reference used by In-store, Demo, Digital, A&P and Design modules", "Quy trình tham khảo dùng chung bởi In-store, Demo, Digital, A&P và Design") },
@@ -36,9 +36,9 @@ export default async function MasterPage({ searchParams }: { searchParams: Promi
   return (
     <div className="mx-auto max-w-5xl px-6 py-8 flex flex-col gap-6">
       <div>
-        <h1 className="text-[22px] font-semibold">{ts(lang, "Master — Longdan Marketing Knowledge Base", "Master — Kho kiến thức Marketing Longdan")}</h1>
+        <h1 className="text-[22px] font-semibold">{ts(lang, "Master — LGD Marketing Knowledge Base", "Master — Kho kiến thức Marketing LGD")}</h1>
         <div className="font-mono-tag text-[12px] text-foreground-muted mt-1">
-          {ts(lang, "How Longdan works — rules, rates and working methods. Not execution data (that lives in Calendar / In-store / Digital / Promotion / A&P).", "Longdan làm việc theo rule nào — quy tắc, bảng giá và phương pháp làm việc. Không phải dữ liệu thực thi (dữ liệu đó ở Calendar / In-store / Digital / Promotion / A&P).")}
+          {ts(lang, "How LGD works — rules, rates and working methods. Not execution data (that lives in Calendar / In-store / Digital / Promotion / A&P).", "LGD làm việc theo rule nào — quy tắc, bảng giá và phương pháp làm việc. Không phải dữ liệu thực thi (dữ liệu đó ở Calendar / In-store / Digital / Promotion / A&P).")}
         </div>
       </div>
 
@@ -48,7 +48,7 @@ export default async function MasterPage({ searchParams }: { searchParams: Promi
           type="text"
           name="q"
           defaultValue={q ?? ""}
-          placeholder={ts(lang, "Search Longdan knowledge...", "Tìm kiếm kiến thức Longdan...")}
+          placeholder={ts(lang, "Search LGD knowledge...", "Tìm kiếm kiến thức LGD...")}
           className="w-full rounded-xl pl-10 pr-4 py-3 bg-glass-surface border border-glass-border text-[14px] focus:outline-none focus:border-foreground-muted"
         />
       </form>

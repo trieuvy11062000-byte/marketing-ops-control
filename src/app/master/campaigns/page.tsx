@@ -22,7 +22,7 @@ export default async function CampaignKnowledgePage() {
         <Link href="/master" className="font-mono-tag text-[11px] text-foreground-muted hover:text-foreground">← Master</Link>
         <h1 className="text-[22px] font-semibold mt-1">{ts(lang, "Campaign Knowledge", "Kiến thức Campaign")}</h1>
         <div className="font-mono-tag text-[12px] text-foreground-muted mt-1">
-          {ts(lang, "The Longdan campaign taxonomy and timing rules — reference knowledge, not live campaign execution", "Phân loại chiến dịch và quy tắc thời gian của Longdan — kiến thức tham khảo, không phải dữ liệu thực thi")}
+          {ts(lang, "The LGD campaign taxonomy and timing rules — reference knowledge, not live campaign execution", "Phân loại chiến dịch và quy tắc thời gian của LGD — kiến thức tham khảo, không phải dữ liệu thực thi")}
         </div>
       </div>
 

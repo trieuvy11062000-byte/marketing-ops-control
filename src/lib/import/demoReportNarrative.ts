@@ -52,7 +52,7 @@ export function extractStartStopContinue(pages: string[]): ExtractedDemoAction[]
     .map((l) => l.trim())
     .filter(Boolean)
     .filter((l) => !/^-- \d+ of \d+ --$/.test(l))
-    .filter((l) => !/^source:/i.test(l) && !/^longdan\s*\|/i.test(l));
+    .filter((l) => !/^source:/i.test(l) && !/^lgd\s*\|/i.test(l));
 
   const isCategoryHeader = (l: string): "START" | "STOP" | "CONTINUE" | null => {
     if (l === "START") return "START";

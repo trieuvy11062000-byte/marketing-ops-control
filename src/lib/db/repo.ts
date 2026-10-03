@@ -284,7 +284,7 @@ export interface ApPackageInput {
   period_start: string | null;
   period_end: string | null;
   total_value?: number | null;
-  longdan_fund?: number | null;
+  lgd_fund?: number | null;
   brand_investment?: number | null;
   status: "IN DELIVERY" | "COMPLETED" | "AWAITING PROPOSAL";
   source_file: string;
@@ -293,9 +293,9 @@ export interface ApPackageInput {
 
 export function upsertApPackage(db: Database.Database, input: ApPackageInput): void {
   db.prepare(
-    `INSERT INTO ap_packages (id, brand_id, name, period_start, period_end, total_value, longdan_fund,
+    `INSERT INTO ap_packages (id, brand_id, name, period_start, period_end, total_value, lgd_fund,
         brand_investment, status, source_file, source_sheet, last_updated)
-     VALUES (@id, @brand_id, @name, @period_start, @period_end, @total_value, @longdan_fund,
+     VALUES (@id, @brand_id, @name, @period_start, @period_end, @total_value, @lgd_fund,
         @brand_investment, @status, @source_file, @source_sheet, datetime('now'))
      ON CONFLICT(id) DO UPDATE SET
         status = excluded.status,
@@ -304,7 +304,7 @@ export function upsertApPackage(db: Database.Database, input: ApPackageInput): v
   ).run({
     ...input,
     total_value: input.total_value ?? null,
-    longdan_fund: input.longdan_fund ?? null,
+    lgd_fund: input.lgd_fund ?? null,
     brand_investment: input.brand_investment ?? null,
   });
 }

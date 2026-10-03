@@ -45,7 +45,7 @@ export interface BrandCampaignRow {
   campaign_type: string | null;
 }
 
-/** Campaigns directly attributed to this brand. Most Longdan campaigns (Monthly,
+/** Campaigns directly attributed to this brand. Most LGD campaigns (Monthly,
  *  Clearance, storewide Golden Week) span every brand and won't appear here — that's
  *  correct, not a bug: Campaign.brand_id is only set when the source data actually
  *  ties a campaign to one brand. */

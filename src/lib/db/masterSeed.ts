@@ -26,8 +26,8 @@ interface ServiceSeed {
   status?: "CURRENT" | "HISTORICAL" | "NEEDS VERIFICATION";
 }
 
-const SOURCE_2027 = "Longdan 2027 A&P Marketing Services — supplied 2026-10-01";
-const SOURCE_2026 = "Longdan Marketing & In-store Promotions SERVICES 2026 — supplied 2026-10-01";
+const SOURCE_2027 = "LGD 2027 A&P Marketing Services — supplied 2026-10-01";
+const SOURCE_2026 = "LGD Marketing & In-store Promotions SERVICES 2026 — supplied 2026-10-01";
 const CAMPAIGN_NOTE_2027 = "Promotion items and FOCs are excluded unless specifically included in the selected package.";
 
 /** Short Vietnamese quick-read explanations — not literal translations of the
@@ -50,27 +50,27 @@ const SERVICE_VI: Record<string, string> = {
   "Branded Standing Display (FSDU)": "Kệ trưng bày đứng độc lập (FSDU) do nhà cung cấp cấp.",
   "Digital Shelf Screen": "Màn hình số nhỏ gắn cạnh kệ để chiếu video/nội dung sản phẩm.",
   "Shelf/Fridge/Freezer-edge Digital Screen": "Màn hình số nhỏ gắn cạnh kệ/tủ mát/tủ đông để chiếu video sản phẩm.",
-  "Supplier-Led Demo": "Demo do nhân viên nhà cung cấp thực hiện, Longdan hỗ trợ setup.",
-  "Supplier-Led Alcohol Demo": "Demo đồ uống có cồn do nhà cung cấp thực hiện, Longdan hỗ trợ vận hành.",
-  "Longdan Staff Demo": "Demo do chính nhân viên Longdan thực hiện (năm 2026 chỉ áp dụng snack/đồ uống, không nấu/không cồn).",
-  "Licensed Agent Demo": "Demo do agent có giấy phép thực hiện, Longdan điều phối.",
+  "Supplier-Led Demo": "Demo do nhân viên nhà cung cấp thực hiện, LGD hỗ trợ setup.",
+  "Supplier-Led Alcohol Demo": "Demo đồ uống có cồn do nhà cung cấp thực hiện, LGD hỗ trợ vận hành.",
+  "LGD Staff Demo": "Demo do chính nhân viên LGD thực hiện (năm 2026 chỉ áp dụng snack/đồ uống, không nấu/không cồn).",
+  "Licensed Agent Demo": "Demo do agent có giấy phép thực hiện, LGD điều phối.",
   "Licensed Agent Led Alcohol Demo": "Demo đồ uống có cồn do agent có giấy phép thực hiện.",
-  "In-store Demonstration": "Demo tại cửa hàng — xem cột Package để biết do Supplier / Longdan Staff / Licensed Agent thực hiện.",
+  "In-store Demonstration": "Demo tại cửa hàng — xem cột Package để biết do Supplier / LGD Staff / Licensed Agent thực hiện.",
   "Landing Page": "Trang landing page riêng cho thương hiệu/sản phẩm, có hỗ trợ website/email/social/SEO.",
-  "Email Marketing": "Gửi email quảng bá thương hiệu tới danh sách khách hàng Longdan.",
-  "Social Media Feature": "Đăng bài nổi bật thương hiệu/sản phẩm trên kênh social của Longdan.",
-  "Livestream Brand Spotlight": "Giới thiệu sản phẩm nổi bật trong buổi livestream của Longdan.",
-  "Livestream": "Giới thiệu sản phẩm nổi bật trong buổi livestream của Longdan.",
-  "In-Store TVC": "Video quảng cáo chiếu trên màn hình số tại cửa hàng Longdan.",
-  "TVC": "Video quảng cáo chiếu trên màn hình số tại cửa hàng Longdan.",
+  "Email Marketing": "Gửi email quảng bá thương hiệu tới danh sách khách hàng LGD.",
+  "Social Media Feature": "Đăng bài nổi bật thương hiệu/sản phẩm trên kênh social của LGD.",
+  "Livestream Brand Spotlight": "Giới thiệu sản phẩm nổi bật trong buổi livestream của LGD.",
+  "Livestream": "Giới thiệu sản phẩm nổi bật trong buổi livestream của LGD.",
+  "In-Store TVC": "Video quảng cáo chiếu trên màn hình số tại cửa hàng LGD.",
+  "TVC": "Video quảng cáo chiếu trên màn hình số tại cửa hàng LGD.",
   "Last-Mile Campaign": "Quảng bá sản phẩm trên các nền tảng giao đồ ăn (Uber Eats, Deliveroo, Hungry Panda).",
   "Brand Launch Package": "Gói ra mắt thương hiệu trọn gói — Landing Page + Campaign + POSM + Email + Social + TVC + 1 Demo.",
   "Seasonal Campaign Package": "Gói chiến dịch theo mùa trọn gói — campaign + POSM + digital + email + social + TVC.",
   "Full-Funnel Brand Package": "Gói đầy đủ phễu thương hiệu — campaign + in-store + landing page + email + social + TVC + livestream.",
   "Annual Visibility Package": "Gói hiện diện trọn năm — campaign quanh năm + digital + in-store + ưu tiên vị trí chiến dịch.",
-  "POSM Campaign Support": "Nhà cung cấp cấp POSM, Longdan hỗ trợ lên kế hoạch, điều phối, phân phối và thực thi tại cửa hàng.",
-  "Branded Gift Campaign Support": "Nhà cung cấp cấp quà tặng thương hiệu, Longdan quản lý điều phối và phân bổ cửa hàng.",
-  "POSM + Gift Activation": "Kết hợp POSM và quà tặng thương hiệu, Longdan quản lý toàn bộ setup và thực thi.",
+  "POSM Campaign Support": "Nhà cung cấp cấp POSM, LGD hỗ trợ lên kế hoạch, điều phối, phân phối và thực thi tại cửa hàng.",
+  "Branded Gift Campaign Support": "Nhà cung cấp cấp quà tặng thương hiệu, LGD quản lý điều phối và phân bổ cửa hàng.",
+  "POSM + Gift Activation": "Kết hợp POSM và quà tặng thương hiệu, LGD quản lý toàn bộ setup và thực thi.",
 };
 
 const SERVICE_VI_BY_ID: Record<string, string> = {
@@ -102,12 +102,12 @@ const SERVICES_2027: ServiceSeed[] = [
   { id: "s27-instore-digiscreen", category: "IN-STORE VISIBILITY", service_name: "Digital Shelf Screen", description: "Product/video content displayed alongside the product.", price_gbp: "£250", price_usd: "$345", price_eur: "€295", coverage: "1 month / Per screen / Per store" },
 
   // ACTIVATION & DEMONSTRATION
-  { id: "s27-demo-supplier-short", category: "ACTIVATION & DEMONSTRATION", service_name: "Supplier-Led Demo", package: "3–4 hours", description: "Supplier representative conducts the demonstration with Longdan support.", price_gbp: "£65", price_usd: "$90", price_eur: "€75", coverage: "3–4 hours / 1 store / 1 session" },
-  { id: "s27-demo-supplier-long", category: "ACTIVATION & DEMONSTRATION", service_name: "Supplier-Led Demo", package: "6-7 hours", description: "Supplier representative conducts the demonstration with Longdan support.", price_gbp: "£115", price_usd: "$155", price_eur: "€135", coverage: "6-7 hours / 1 store / 1 session" },
-  { id: "s27-demo-supplier-alcohol", category: "ACTIVATION & DEMONSTRATION", service_name: "Supplier-Led Alcohol Demo", description: "Supplier-led alcohol demonstration with Longdan operational support.", price_gbp: "£165", price_usd: "$225", price_eur: "€195", coverage: "4-5 hours / 1 store / 1 session" },
-  { id: "s27-demo-longdan-staff", category: "ACTIVATION & DEMONSTRATION", service_name: "Longdan Staff Demo", description: "Demonstration delivered by Longdan staff including setup and customer engagement.", price_gbp: "£225", price_usd: "$305", price_eur: "€265", coverage: "3–4 hours / 1 store / 1 session" },
-  { id: "s27-demo-licensed-agent", category: "ACTIVATION & DEMONSTRATION", service_name: "Licensed Agent Demo", description: "Professional licensed agent conducts the demonstration with Longdan coordination.", price_gbp: "£285", price_usd: "$385", price_eur: "€335", coverage: "3–4 hours / 1 store / 1 session" },
-  { id: "s27-demo-licensed-agent-alcohol", category: "ACTIVATION & DEMONSTRATION", service_name: "Licensed Agent Led Alcohol Demo", description: "Professional licensed agent conducts the demonstration with Longdan coordination.", price_gbp: "£385", price_usd: "$520", price_eur: "€450", coverage: "4-5 hours / 1 store / 1 session" },
+  { id: "s27-demo-supplier-short", category: "ACTIVATION & DEMONSTRATION", service_name: "Supplier-Led Demo", package: "3–4 hours", description: "Supplier representative conducts the demonstration with LGD support.", price_gbp: "£65", price_usd: "$90", price_eur: "€75", coverage: "3–4 hours / 1 store / 1 session" },
+  { id: "s27-demo-supplier-long", category: "ACTIVATION & DEMONSTRATION", service_name: "Supplier-Led Demo", package: "6-7 hours", description: "Supplier representative conducts the demonstration with LGD support.", price_gbp: "£115", price_usd: "$155", price_eur: "€135", coverage: "6-7 hours / 1 store / 1 session" },
+  { id: "s27-demo-supplier-alcohol", category: "ACTIVATION & DEMONSTRATION", service_name: "Supplier-Led Alcohol Demo", description: "Supplier-led alcohol demonstration with LGD operational support.", price_gbp: "£165", price_usd: "$225", price_eur: "€195", coverage: "4-5 hours / 1 store / 1 session" },
+  { id: "s27-demo-lgd-staff", category: "ACTIVATION & DEMONSTRATION", service_name: "LGD Staff Demo", description: "Demonstration delivered by LGD staff including setup and customer engagement.", price_gbp: "£225", price_usd: "$305", price_eur: "€265", coverage: "3–4 hours / 1 store / 1 session" },
+  { id: "s27-demo-licensed-agent", category: "ACTIVATION & DEMONSTRATION", service_name: "Licensed Agent Demo", description: "Professional licensed agent conducts the demonstration with LGD coordination.", price_gbp: "£285", price_usd: "$385", price_eur: "€335", coverage: "3–4 hours / 1 store / 1 session" },
+  { id: "s27-demo-licensed-agent-alcohol", category: "ACTIVATION & DEMONSTRATION", service_name: "Licensed Agent Led Alcohol Demo", description: "Professional licensed agent conducts the demonstration with LGD coordination.", price_gbp: "£385", price_usd: "$520", price_eur: "€450", coverage: "4-5 hours / 1 store / 1 session" },
 
   // VOLUME DISCOUNT (Demo, 2027)
   { id: "s27-vol-9-18", category: "VOLUME DISCOUNT", service_name: "Annual Demo Commitment — 9–18 sessions", description: "5% additional discount on demo activities.", price_gbp: null, price_usd: null, price_eur: null, coverage: null, notes: "Applies to annual demo activity volume commitment." },
@@ -118,10 +118,10 @@ const SERVICES_2027: ServiceSeed[] = [
 
   // DIGITAL MARKETING
   { id: "s27-digital-landing", category: "DIGITAL MARKETING", service_name: "Landing Page", description: "Dedicated brand/product page with website, email, social and basic SEO support.", price_gbp: "£1,350", price_usd: "$1,835", price_eur: "€1,575", coverage: "4 weeks / Online / Retail + Wholesale audience" },
-  { id: "s27-digital-email", category: "DIGITAL MARKETING", service_name: "Email Marketing", description: "Dedicated supplier feature to Longdan customer databases.", price_gbp: "£450", price_usd: "$610", price_eur: "€525", coverage: "1 campaign / Online + Wholesale / 1-month campaign period" },
-  { id: "s27-digital-social", category: "DIGITAL MARKETING", service_name: "Social Media Feature", description: "Dedicated brand/product feature across Longdan social channels.", price_gbp: "£400", price_usd: "$545", price_eur: "€465", coverage: "1 campaign / Social audience / 2–4 weeks" },
-  { id: "s27-digital-livestream", category: "DIGITAL MARKETING", service_name: "Livestream Brand Spotlight", description: "Host-led product presentation during Longdan livestream.", price_gbp: "£450", price_usd: "$610", price_eur: "€525", coverage: "1 livestream session / Online audience" },
-  { id: "s27-digital-tvc", category: "DIGITAL MARKETING", service_name: "In-Store TVC", description: "Supplier video displayed across Longdan digital screens.", price_gbp: "£500", price_usd: "$675", price_eur: "€585", coverage: "1 month / 13 stores / 53 digital screens" },
+  { id: "s27-digital-email", category: "DIGITAL MARKETING", service_name: "Email Marketing", description: "Dedicated supplier feature to LGD customer databases.", price_gbp: "£450", price_usd: "$610", price_eur: "€525", coverage: "1 campaign / Online + Wholesale / 1-month campaign period" },
+  { id: "s27-digital-social", category: "DIGITAL MARKETING", service_name: "Social Media Feature", description: "Dedicated brand/product feature across LGD social channels.", price_gbp: "£400", price_usd: "$545", price_eur: "€465", coverage: "1 campaign / Social audience / 2–4 weeks" },
+  { id: "s27-digital-livestream", category: "DIGITAL MARKETING", service_name: "Livestream Brand Spotlight", description: "Host-led product presentation during LGD livestream.", price_gbp: "£450", price_usd: "$610", price_eur: "€525", coverage: "1 livestream session / Online audience" },
+  { id: "s27-digital-tvc", category: "DIGITAL MARKETING", service_name: "In-Store TVC", description: "Supplier video displayed across LGD digital screens.", price_gbp: "£500", price_usd: "$675", price_eur: "€585", coverage: "1 month / 13 stores / 53 digital screens" },
   { id: "s27-digital-lastmile", category: "DIGITAL MARKETING", service_name: "Last-Mile Campaign", description: "Dedicated product promotion across third-party delivery platforms such as Uber Eats, Deliveroo and Hungry Panda designed to increase product visibility and drive online orders from customers in the local delivery market.", price_gbp: "£1,350", price_usd: "$1,835", price_eur: "€1,575", coverage: "2–4 weeks / Online + In-store customer journey" },
 
   // PREMIUM PACKAGES
@@ -131,9 +131,9 @@ const SERVICES_2027: ServiceSeed[] = [
   { id: "s27-pkg-annual", category: "PREMIUM PACKAGES", service_name: "Annual Visibility Package", description: "Year-round campaigns + digital support + in-store visibility + priority campaign placement.", price_gbp: "£8,000–£12,000", price_usd: "$10,835–$16,255", price_eur: "€9,345–€14,000", coverage: "12 months / Multi-store 6-12 Stores / Retail + Online + Wholesale" },
 
   // POSM & BRAND ACTIVATION SUPPORT
-  { id: "s27-posm-support", category: "POSM & BRAND ACTIVATION", service_name: "POSM Campaign Support", description: "Supplier provides POSM materials. Longdan supports campaign planning, POSM coordination, store communication, distribution and in-store execution.", price_gbp: "£150", price_usd: "$205", price_eur: "€175", coverage: "Per campaign / Up to 13 stores / 2–4 weeks" },
-  { id: "s27-posm-gift", category: "POSM & BRAND ACTIVATION", service_name: "Branded Gift Campaign Support", description: "Supplier provides branded gifts or customer giveaways. Longdan manages campaign coordination, store allocation, operational instructions and execution monitoring.", price_gbp: "£200", price_usd: "$275", price_eur: "€235", coverage: "Per campaign / Up to 13 stores / 2–4 weeks" },
-  { id: "s27-posm-gift-combo", category: "POSM & BRAND ACTIVATION", service_name: "POSM + Gift Activation", description: "Integrated campaign using supplier-provided POSM and branded gifts, with Longdan managing campaign setup, store coordination, distribution and execution.", price_gbp: "£250", price_usd: "$345", price_eur: "€295", coverage: "Per campaign / Up to 13 stores / 2–4 weeks" },
+  { id: "s27-posm-support", category: "POSM & BRAND ACTIVATION", service_name: "POSM Campaign Support", description: "Supplier provides POSM materials. LGD supports campaign planning, POSM coordination, store communication, distribution and in-store execution.", price_gbp: "£150", price_usd: "$205", price_eur: "€175", coverage: "Per campaign / Up to 13 stores / 2–4 weeks" },
+  { id: "s27-posm-gift", category: "POSM & BRAND ACTIVATION", service_name: "Branded Gift Campaign Support", description: "Supplier provides branded gifts or customer giveaways. LGD manages campaign coordination, store allocation, operational instructions and execution monitoring.", price_gbp: "£200", price_usd: "$275", price_eur: "€235", coverage: "Per campaign / Up to 13 stores / 2–4 weeks" },
+  { id: "s27-posm-gift-combo", category: "POSM & BRAND ACTIVATION", service_name: "POSM + Gift Activation", description: "Integrated campaign using supplier-provided POSM and branded gifts, with LGD managing campaign setup, store coordination, distribution and execution.", price_gbp: "£250", price_usd: "$345", price_eur: "€295", coverage: "Per campaign / Up to 13 stores / 2–4 weeks" },
 ];
 
 const SERVICES_2026: ServiceSeed[] = [
@@ -155,15 +155,15 @@ const SERVICES_2026: ServiceSeed[] = [
   { id: "s26-fixture-fsdu-premium", category: "IN-STORE VISIBILITY", service_name: "Branded Standing Display (FSDU)", package: "Premium", description: "Display for 12 months.", price_gbp: "£1,000", price_usd: "$1,265", price_eur: "€1,200", coverage: "Per store, 12 months" },
 
   // 3. In-store Demonstrations
-  { id: "s26-demo-supplier", category: "ACTIVATION & DEMONSTRATION", service_name: "In-store Demonstration", package: "By Supplier", description: "Demonstration conducted by Supplier Agents with Longdan support for setup and operation.", price_gbp: "£55", price_usd: "$69", price_eur: "€70", coverage: "Per 3–4 hour demo session/store" },
-  { id: "s26-demo-longdan", category: "ACTIVATION & DEMONSTRATION", service_name: "In-store Demonstration", package: "By Longdan Staff", description: "Demonstration conducted entirely by Longdan staff, including setup and operation. Applicable only for snacks and drinks; excludes products requiring cooking or containing alcohol.", price_gbp: "£195", price_usd: "$245", price_eur: "€235", coverage: "Per 3–4 hour demo session/store" },
-  { id: "s26-demo-licensed", category: "ACTIVATION & DEMONSTRATION", service_name: "In-store Demonstration", package: "By Licensed Agent", description: "Demonstration conducted by a licensed agent with Longdan support for setup and operation.", price_gbp: "£265", price_usd: "$335", price_eur: "€320", coverage: "Per 3–4 hour demo session/store" },
+  { id: "s26-demo-supplier", category: "ACTIVATION & DEMONSTRATION", service_name: "In-store Demonstration", package: "By Supplier", description: "Demonstration conducted by Supplier Agents with LGD support for setup and operation.", price_gbp: "£55", price_usd: "$69", price_eur: "€70", coverage: "Per 3–4 hour demo session/store" },
+  { id: "s26-demo-lgd", category: "ACTIVATION & DEMONSTRATION", service_name: "In-store Demonstration", package: "By LGD Staff", description: "Demonstration conducted entirely by LGD staff, including setup and operation. Applicable only for snacks and drinks; excludes products requiring cooking or containing alcohol.", price_gbp: "£195", price_usd: "$245", price_eur: "€235", coverage: "Per 3–4 hour demo session/store" },
+  { id: "s26-demo-licensed", category: "ACTIVATION & DEMONSTRATION", service_name: "In-store Demonstration", package: "By Licensed Agent", description: "Demonstration conducted by a licensed agent with LGD support for setup and operation.", price_gbp: "£265", price_usd: "$335", price_eur: "€320", coverage: "Per 3–4 hour demo session/store" },
 
   // 4. Digital (2026)
   { id: "s26-digital-landing", category: "DIGITAL MARKETING", service_name: "Landing Page", description: "Website banner, email, and social media promotion, dedicated landing page, and SEO support.", price_gbp: "£1,200", price_usd: "$1,500", price_eur: "€1,440", coverage: "per page" },
   { id: "s26-digital-livestream", category: "DIGITAL MARKETING", service_name: "Livestream", description: "A dedicated brand spotlight during livestream sessions, including host-led promotion and trade incentives.", price_gbp: "£400", price_usd: "$500", price_eur: "€480", coverage: "Per session, aligned with the number of campaigns the supplier participates in." },
-  { id: "s26-digital-email", category: "DIGITAL MARKETING", service_name: "Email Marketing", description: "A dedicated email campaign sent to over 45,000 Longdan Online subscribers and 2,000/1,000 Longdan Wholesale Customer emails, targeting both Retail and Wholesale audiences to promote new arrivals, key campaigns, and featured products available in-store and online.", price_gbp: "£400", price_usd: "$500", price_eur: "€480", coverage: "Per 1-month display campaign across 13 stores", notes: "Source wholesale subscriber count read as \"2,000 1,000\" — two figures run together in the supplied table. Preserved as given, flagged rather than guessed.", status: "NEEDS VERIFICATION" },
-  { id: "s26-digital-tvc", category: "DIGITAL MARKETING", service_name: "TVC", description: "A dedicated in-store TVC campaign featuring supplier-provided videos displayed across 53 digital screens in 13 Longdan stores, helping maximise product visibility and customer awareness during the campaign period.", price_gbp: "£400", price_usd: "$500", price_eur: "€480", coverage: "Per 1-month display campaign across 13 stores" },
+  { id: "s26-digital-email", category: "DIGITAL MARKETING", service_name: "Email Marketing", description: "A dedicated email campaign sent to over 45,000 LGD Online subscribers and 2,000/1,000 LGD Wholesale Customer emails, targeting both Retail and Wholesale audiences to promote new arrivals, key campaigns, and featured products available in-store and online.", price_gbp: "£400", price_usd: "$500", price_eur: "€480", coverage: "Per 1-month display campaign across 13 stores", notes: "Source wholesale subscriber count read as \"2,000 1,000\" — two figures run together in the supplied table. Preserved as given, flagged rather than guessed.", status: "NEEDS VERIFICATION" },
+  { id: "s26-digital-tvc", category: "DIGITAL MARKETING", service_name: "TVC", description: "A dedicated in-store TVC campaign featuring supplier-provided videos displayed across 53 digital screens in 13 LGD stores, helping maximise product visibility and customer awareness during the campaign period.", price_gbp: "£400", price_usd: "$500", price_eur: "€480", coverage: "Per 1-month display campaign across 13 stores" },
 ];
 
 const COVERAGE_TERMS_2027: { term_type: string; values: string[] }[] = [
@@ -188,11 +188,11 @@ interface CampaignTypeSeed {
 }
 
 const CAMPAIGN_TYPES: CampaignTypeSeed[] = [
-  { id: "ct-monthly", name: "Monthly Campaign", what_it_is: "Recurring monthly brand/product campaign across Longdan retail (and online where applicable).", frequency: "12 per year", timing_rule: "One per calendar month", duration: "4 weeks (per rate card)", purpose: "Drive consistent monthly visibility and sales momentum for participating brands.", typical_deliverables: "A4 poster, wobbler, price strip, website banner, email, social media", notes: "See Premium Campaign — Monthly Campaign (2027) / Premium listing (2026) for current rate.", explanation_vi: "Chiến dịch lặp lại mỗi tháng, 12 lần/năm." },
-  { id: "ct-golden-week", name: "Golden Week", what_it_is: "Dedicated flagship activation window.", frequency: "6 per year, per the annual campaign calendar", timing_rule: "Per the annual campaign calendar — \"Week\" does not automatically mean 7 calendar days; always use the defined campaign Start/End dates.", duration: "2 weeks (per rate card)", purpose: "Flagship seasonal/thematic activation with amplified POSM and digital support.", typical_deliverables: "A4 poster, wobbler, website banner, email, social media", notes: "Listing Marketing Campaigns — Basic (2026) and Essential Campaign — Golden Weeks (2027) are the corresponding rate card entries. CONFLICT: the Longdan 2026 Marketing Execution Plan (supplied 2026-10-04) lists Golden Week Execution as 7x/year in its Retail Marketing execution overview — not reconciled with the 6/year rule here. Verify which figure is current before planning next year's calendar.", explanation_vi: "Chiến dịch trọng điểm 6 lần/năm theo Annual Campaign Calendar.", status: "NEEDS VERIFICATION" },
+  { id: "ct-monthly", name: "Monthly Campaign", what_it_is: "Recurring monthly brand/product campaign across LGD retail (and online where applicable).", frequency: "12 per year", timing_rule: "One per calendar month", duration: "4 weeks (per rate card)", purpose: "Drive consistent monthly visibility and sales momentum for participating brands.", typical_deliverables: "A4 poster, wobbler, price strip, website banner, email, social media", notes: "See Premium Campaign — Monthly Campaign (2027) / Premium listing (2026) for current rate.", explanation_vi: "Chiến dịch lặp lại mỗi tháng, 12 lần/năm." },
+  { id: "ct-golden-week", name: "Golden Week", what_it_is: "Dedicated flagship activation window.", frequency: "6 per year, per the annual campaign calendar", timing_rule: "Per the annual campaign calendar — \"Week\" does not automatically mean 7 calendar days; always use the defined campaign Start/End dates.", duration: "2 weeks (per rate card)", purpose: "Flagship seasonal/thematic activation with amplified POSM and digital support.", typical_deliverables: "A4 poster, wobbler, website banner, email, social media", notes: "Listing Marketing Campaigns — Basic (2026) and Essential Campaign — Golden Weeks (2027) are the corresponding rate card entries. CONFLICT: the LGD 2026 Marketing Execution Plan (supplied 2026-10-04) lists Golden Week Execution as 7x/year in its Retail Marketing execution overview — not reconciled with the 6/year rule here. Verify which figure is current before planning next year's calendar.", explanation_vi: "Chiến dịch trọng điểm 6 lần/năm theo Annual Campaign Calendar.", status: "NEEDS VERIFICATION" },
   { id: "ct-branded-week", name: "Branded Week", what_it_is: "Alternative branded activation used in months that are not a Golden Week month.", frequency: "Fills the non-Golden-Week months of the year", timing_rule: "Scheduled opposite Golden Week in the annual calendar — use the defined campaign dates, not a literal 7-day assumption.", duration: "Per the annual campaign calendar", purpose: "Maintains a consistent cadence of flagship-style activation across all months, not only Golden Week months.", typical_deliverables: "POSM + digital, brand-led (similar structure to Golden Week)", explanation_vi: "Hoạt động thương hiệu thay thế ở các tháng không có Golden Week." },
   { id: "ct-double-date", name: "Double Date", what_it_is: "Shopping-event campaign tied to a calendar double-date (e.g. 10.10, 11.11).", frequency: "Per the annual campaign calendar", timing_rule: "Aligned to the specific double-date", duration: "Short, date-anchored window", purpose: "Capture seasonal shopping-event demand.", typical_deliverables: "Campaign creative (TVC/banner/social), in-store promotion support", explanation_vi: "Chiến dịch mua sắm theo ngày đôi (vd 10.10, 11.11), chạy theo ngày cụ thể, không cố định tuần." },
-  { id: "ct-longdan-plus", name: "Longdan Plus", what_it_is: "Longdan's loyalty/membership-linked promotion mechanic.", frequency: "Per campaign calendar / as scheduled", timing_rule: "Per campaign dates", duration: "Per campaign dates", purpose: "Drive loyalty member engagement and registration.", typical_deliverables: "Membership card / QR code creative, in-store promotion signage", notes: "See execution records such as LP-Oct26 for a live example.", explanation_vi: "Cơ chế khuyến mãi gắn với thẻ thành viên/loyalty của Longdan." },
+  { id: "ct-lgd-plus", name: "LGD Plus", what_it_is: "LGD's loyalty/membership-linked promotion mechanic.", frequency: "Per campaign calendar / as scheduled", timing_rule: "Per campaign dates", duration: "Per campaign dates", purpose: "Drive loyalty member engagement and registration.", typical_deliverables: "Membership card / QR code creative, in-store promotion signage", notes: "See execution records such as LP-Oct26 for a live example.", explanation_vi: "Cơ chế khuyến mãi gắn với thẻ thành viên/loyalty của LGD." },
   { id: "ct-clearance", name: "Clearance Sale", what_it_is: "Stock clearance / markdown promotion.", frequency: "As needed", timing_rule: "Per clearance period dates", duration: "Variable", purpose: "Move aged or excess stock.", typical_deliverables: "Price label / promotion tag", explanation_vi: "Chương trình xả hàng tồn/giảm giá, chạy khi cần, không theo lịch cố định." },
   { id: "ct-weekly-exceptional", name: "Weekly / Exceptional", what_it_is: "Ad-hoc or exceptional short-run promotion outside the standard campaign cadence.", frequency: "As needed", timing_rule: "Per specific dates", duration: "Typically 1 week or less", purpose: "React to short-term commercial opportunities.", typical_deliverables: "Varies by occasion", explanation_vi: "Khuyến mãi ngắn hạn, phát sinh ngoài lịch chiến dịch chuẩn." },
   { id: "ct-volume-category", name: "Volume / Category Deal", what_it_is: "Bulk/volume pricing deal, often by product category.", frequency: "As scheduled", timing_rule: "Per deal dates", duration: "Variable", purpose: "Drive case/bulk volume and wholesale demand.", typical_deliverables: "Price label, wholesale promotion signage", explanation_vi: "Ưu đãi theo số lượng/ngành hàng, thường áp dụng cho kênh wholesale." },
@@ -203,15 +203,15 @@ const AP_PLAYBOOK_STEPS: { id: string; step_order: number; step_name: string; de
   { id: "ap-step-brief", step_order: 1, step_name: "Brief", description: "Capture the supplier's ask — scope, objective, budget range, timing.", description_vi: "Ghi nhận yêu cầu của nhà cung cấp — phạm vi, mục tiêu, ngân sách, thời gian.", rules: null },
   { id: "ap-step-verify", step_order: 2, step_name: "Verify Data", description: "Confirm the underlying commercial data before building anything.", description_vi: "Xác minh dữ liệu thương mại gốc trước khi xây dựng bất kỳ nội dung nào.", rules: "Use actual sales/product codes, not estimates.\nVerify campaign name, dates, package rights and totals before proceeding." },
   { id: "ap-step-select", step_order: 3, step_name: "Select Activities", description: "Choose services/activities from the current rate card that match the brief.", description_vi: "Chọn dịch vụ/hoạt động từ rate card hiện hành phù hợp với yêu cầu.", rules: "Reference Master → Services & Rate Card for current pricing — never quote from memory or a stale sheet." },
-  { id: "ap-step-budget", step_order: 4, step_name: "Build Budget", description: "Build the budget from actual PO references and the contribution split.", description_vi: "Xây ngân sách từ PO thực tế và tỷ lệ đóng góp của hai bên.", rules: "Distinguish Supplier contribution vs Longdan contribution.\nBuild the budget from PO-based references, not assumptions.\nTarget cost, proposed cost and confirmed budget are three different numbers — never conflate them." },
+  { id: "ap-step-budget", step_order: 4, step_name: "Build Budget", description: "Build the budget from actual PO references and the contribution split.", description_vi: "Xây ngân sách từ PO thực tế và tỷ lệ đóng góp của hai bên.", rules: "Distinguish Supplier contribution vs LGD contribution.\nBuild the budget from PO-based references, not assumptions.\nTarget cost, proposed cost and confirmed budget are three different numbers — never conflate them." },
   { id: "ap-step-forecast", step_order: 5, step_name: "Forecast", description: "Forecast expected performance from real baseline data.", description_vi: "Dự báo hiệu quả dựa trên baseline thực tế, không dùng giả định lạc quan.", rules: "Forecast from actual baseline sales, not optimistic assumptions.\nUse 2–3x baseline uplift only where explicitly instructed — never as a default assumption.\nMock-up data must never be presented as evidence." },
   { id: "ap-step-build", step_order: 6, step_name: "Build Proposal", description: "Assemble the proposal document from verified inputs.", description_vi: "Soạn đề xuất từ các dữ liệu đã được xác minh.", rules: "Do not invent market or brand claims not backed by data." },
-  { id: "ap-step-qa", step_order: 7, step_name: "Final QA", description: "Final check before sending.", description_vi: "Kiểm tra lần cuối trước khi gửi — tên chiến dịch, ngày, quyền lợi gói, tổng số liệu.", rules: "Verify campaign name, dates, package rights and totals before sending.\nConfirm the Supplier vs Longdan contribution split is correct.\nConfirm all figures trace back to PO/actuals, not placeholders." },
+  { id: "ap-step-qa", step_order: 7, step_name: "Final QA", description: "Final check before sending.", description_vi: "Kiểm tra lần cuối trước khi gửi — tên chiến dịch, ngày, quyền lợi gói, tổng số liệu.", rules: "Verify campaign name, dates, package rights and totals before sending.\nConfirm the Supplier vs LGD contribution split is correct.\nConfirm all figures trace back to PO/actuals, not placeholders." },
 ];
 
 const AP_CHECKLIST: string[] = [
   "Campaign name, dates and package rights verified",
-  "Supplier contribution vs Longdan contribution confirmed",
+  "Supplier contribution vs LGD contribution confirmed",
   "Budget figures trace to PO references, not assumptions",
   "Target cost / proposed cost / confirmed budget not conflated",
   "Forecast built from actual baseline sales",
@@ -247,19 +247,19 @@ const HANDBOOK_ENTRIES: { id: string; category: string; title: string; body: str
   },
   { id: "hb-demo", category: "Demo", title: "Demo session tracking", body: "Demo/Tasting sessions are tracked per-week in demo_weekly_reports / demo_session_performance, with rates defined in Master → Services & Rate Card (Activation & Demonstration). Detailed day-of-session operating procedure not yet documented.", body_vi: "Buổi Demo/Tasting được theo dõi theo tuần trong demo_weekly_reports / demo_session_performance, giá tham khảo tại Master → Services & Rate Card (Activation & Demonstration). Quy trình vận hành chi tiết trong ngày demo chưa được ghi lại.", summary_vi: "Buổi Demo theo dõi theo tuần, giá tham khảo tại Master → Rate Card — quy trình vận hành chi tiết chưa có.", source: "Inferred from demo reporting schema", status: "NEEDS VERIFICATION" },
   { id: "hb-ap-reporting", category: "A&P", title: "Agreed vs Delivered tracking", body: "A&P tracks Agreed → Delivered → Evidence → Reported, pulling actual execution from Campaign/In-store/Demo/Digital/Promotion/Design Assets rather than duplicating execution records inside A&P. See Master → A&P Proposal Playbook for the proposal-building process. Post-campaign reporting cadence not yet documented.", body_vi: "A&P theo dõi Agreed → Delivered → Evidence → Reported, lấy dữ liệu thực thi từ Campaign/In-store/Demo/Digital/Promotion/Design Assets thay vì tạo bản ghi thực thi trùng trong A&P. Xem Master → A&P Proposal Playbook để biết quy trình xây đề xuất. Nhịp báo cáo sau chiến dịch chưa được ghi lại.", summary_vi: "A&P theo dõi Agreed → Delivered → Evidence → Reported, lấy dữ liệu từ các module khác, không tạo bản ghi trùng.", source: "Inferred from ap_packages / ap_delivery_lines schema", status: "NEEDS VERIFICATION" },
-  { id: "hb-posm", category: "POSM", title: "POSM material handling", body: "POSM materials (Wobbler, Shelf Strip, FSDU, Branded Gondola/Fridge/Freezer) are supplier-provided per the Services & Rate Card; Longdan coordinates planning, store communication, distribution and execution (see POSM Campaign Support service). Detailed internal handling steps not yet documented.", body_vi: "Vật phẩm POSM (Wobbler, Shelf Strip, FSDU, Branded Gondola/Fridge/Freezer) do nhà cung cấp cấp theo Services & Rate Card; Longdan điều phối lên kế hoạch, thông báo cửa hàng, phân phối và thực thi (xem dịch vụ POSM Campaign Support). Các bước xử lý nội bộ chi tiết chưa được ghi lại.", summary_vi: "Vật phẩm POSM do nhà cung cấp cấp, Longdan điều phối lắp đặt — quy trình nội bộ chi tiết chưa có.", source: "Inferred from Services & Rate Card", status: "NEEDS VERIFICATION" },
+  { id: "hb-posm", category: "POSM", title: "POSM material handling", body: "POSM materials (Wobbler, Shelf Strip, FSDU, Branded Gondola/Fridge/Freezer) are supplier-provided per the Services & Rate Card; LGD coordinates planning, store communication, distribution and execution (see POSM Campaign Support service). Detailed internal handling steps not yet documented.", body_vi: "Vật phẩm POSM (Wobbler, Shelf Strip, FSDU, Branded Gondola/Fridge/Freezer) do nhà cung cấp cấp theo Services & Rate Card; LGD điều phối lên kế hoạch, thông báo cửa hàng, phân phối và thực thi (xem dịch vụ POSM Campaign Support). Các bước xử lý nội bộ chi tiết chưa được ghi lại.", summary_vi: "Vật phẩm POSM do nhà cung cấp cấp, LGD điều phối lắp đặt — quy trình nội bộ chi tiết chưa có.", source: "Inferred from Services & Rate Card", status: "NEEDS VERIFICATION" },
   { id: "hb-instore", category: "Other SOP", title: "In-store activity tracking", body: "In-store activity (Promotion, Fixture/Branding, POSM) is tracked as Design Activities of type IN-STORE, linked to the same Brand/Month/Asset records shown in Design Assets and the In-store module. Detailed step-by-step execution workflow (store comms, installation, removal) not yet documented — add via Master when available.", body_vi: "Hoạt động in-store (Promotion, Fixture/Branding, POSM) được theo dõi dưới dạng Design Activities loại IN-STORE, liên kết với cùng bản ghi Brand/Month/Asset hiển thị ở Design Assets và module In-store. Quy trình thực thi chi tiết từng bước (thông báo cửa hàng, lắp đặt, tháo dỡ) chưa được ghi lại — sẽ bổ sung vào Master khi có.", summary_vi: "Hoạt động in-store (Promotion, Fixture/Branding, POSM) theo dõi qua Design Activities — quy trình chi tiết chưa có.", source: "Inferred from design_activities schema", status: "NEEDS VERIFICATION" },
-  { id: "hb-tvc", category: "Other SOP", title: "TVC asset tracking", body: "In-store TVC and TVC-type Design Assets are tracked under channel DIGITAL / IN-STORE SCREEN, displayed across Longdan's digital screens (53 screens / 13 stores per the rate card). Submission/encoding/scheduling steps not yet documented.", body_vi: "TVC tại cửa hàng và Design Asset loại TVC được theo dõi dưới kênh DIGITAL / IN-STORE SCREEN, hiển thị trên màn hình số của Longdan (53 màn/13 cửa hàng theo rate card). Các bước nộp bài/encode/lên lịch chưa được ghi lại.", summary_vi: "TVC cửa hàng hiển thị trên màn hình số (53 màn/13 cửa hàng) — quy trình nộp bài/lên lịch chưa có.", source: "Inferred from design_assets schema + Services & Rate Card", status: "NEEDS VERIFICATION" },
+  { id: "hb-tvc", category: "Other SOP", title: "TVC asset tracking", body: "In-store TVC and TVC-type Design Assets are tracked under channel DIGITAL / IN-STORE SCREEN, displayed across LGD's digital screens (53 screens / 13 stores per the rate card). Submission/encoding/scheduling steps not yet documented.", body_vi: "TVC tại cửa hàng và Design Asset loại TVC được theo dõi dưới kênh DIGITAL / IN-STORE SCREEN, hiển thị trên màn hình số của LGD (53 màn/13 cửa hàng theo rate card). Các bước nộp bài/encode/lên lịch chưa được ghi lại.", summary_vi: "TVC cửa hàng hiển thị trên màn hình số (53 màn/13 cửa hàng) — quy trình nộp bài/lên lịch chưa có.", source: "Inferred from design_assets schema + Services & Rate Card", status: "NEEDS VERIFICATION" },
   { id: "hb-digital", category: "Other SOP", title: "Digital asset channels", body: "Digital Design Assets split into Social, Website, Email/eNews and Video — each mapped to its own channel in design_assets.channel. Rates and coverage are defined in Master → Services & Rate Card (Digital Marketing). Publishing/scheduling procedure not yet documented.", body_vi: "Design Asset Digital chia thành Social, Website, Email/eNews và Video — mỗi loại gắn với kênh riêng trong design_assets.channel. Giá và phạm vi được định nghĩa tại Master → Services & Rate Card (Digital Marketing). Quy trình đăng bài/lên lịch chưa được ghi lại.", summary_vi: "Tài sản Digital chia theo kênh Social/Website/Email/Video — quy trình đăng bài/lên lịch chưa có.", source: "Inferred from design_assets schema", status: "NEEDS VERIFICATION" },
-  { id: "hb-email", category: "Other SOP", title: "Email / eNews assets", body: "Email/eNews assets map to channel EMAIL, reaching Longdan's Retail and Wholesale subscriber base per the rate card. Build/send/approval procedure not yet documented.", body_vi: "Tài sản Email/eNews gắn với kênh EMAIL, tiếp cận khách Retail và Wholesale của Longdan theo rate card. Quy trình build/gửi/duyệt chưa được ghi lại.", summary_vi: "Email/eNews gửi tới khách Retail và Wholesale — quy trình duyệt/gửi chưa có.", source: "Inferred from design_assets schema", status: "NEEDS VERIFICATION" },
+  { id: "hb-email", category: "Other SOP", title: "Email / eNews assets", body: "Email/eNews assets map to channel EMAIL, reaching LGD's Retail and Wholesale subscriber base per the rate card. Build/send/approval procedure not yet documented.", body_vi: "Tài sản Email/eNews gắn với kênh EMAIL, tiếp cận khách Retail và Wholesale của LGD theo rate card. Quy trình build/gửi/duyệt chưa được ghi lại.", summary_vi: "Email/eNews gửi tới khách Retail và Wholesale — quy trình duyệt/gửi chưa có.", source: "Inferred from design_assets schema", status: "NEEDS VERIFICATION" },
   { id: "hb-website", category: "Other SOP", title: "Website assets", body: "Website assets (Banner — Desktop/Mobile, Landing Page) map to channel WEBSITE. Build/publish procedure not yet documented.", body_vi: "Tài sản Website (Banner — Desktop/Mobile, Landing Page) gắn với kênh WEBSITE. Quy trình build/publish chưa được ghi lại.", summary_vi: "Tài sản Website (Banner, Landing Page) — quy trình build/publish chưa có.", source: "Inferred from design_assets schema", status: "NEEDS VERIFICATION" },
   { id: "hb-promotion", category: "Other SOP", title: "Channel-specific promotions", body: "Promotions remain channel-specific (In-store / Retail Online / Wholesale / Last Mile) and are never merged across channels even for the same SKU — see promotions.channel and the Design Assets promotion cross-link logic. Approval procedure not yet documented.", body_vi: "Khuyến mãi luôn tách riêng theo kênh (In-store / Retail Online / Wholesale / Last Mile) và không bao giờ gộp chung dù cùng SKU — xem promotions.channel và logic liên kết khuyến mãi ở Design Assets. Quy trình duyệt chưa được ghi lại.", summary_vi: "Khuyến mãi luôn tách riêng theo kênh (In-store/Online Retail/Wholesale/Last Mile), không gộp chung dù cùng SKU.", source: "Inferred from promotions schema", status: "NEEDS VERIFICATION" },
   {
     id: "hb-systems-architecture",
     category: "Other SOP",
     title: "Database, Systems & Data Flow",
-    body: "SAP Business One is the master data source (purchasing, warehouse, sales, finance, inventory — owned by WH/Purchasing/Sales/Finance/IT). Longdan ePOS handles retail sales, promotions, loyalty and store operations (Retail/Marketing/IT). The POSM & TVC Dashboard tracks POSM allocation and TVC scheduling (Marketing & IT). Power BI + other reports cover business performance, marketing reporting and KPI dashboards (IT & BI Team).\n\nData Flow: SAP Business One → ePOS → Power BI → Marketing & Business Reporting.",
-    body_vi: "SAP Business One là nguồn dữ liệu gốc (purchasing, kho, sales, tài chính, tồn kho — thuộc sở hữu của WH/Purchasing/Sales/Finance/IT). Longdan ePOS xử lý doanh số retail, khuyến mãi, loyalty và vận hành cửa hàng (Retail/Marketing/IT). POSM & TVC Dashboard theo dõi phân bổ POSM và lịch TVC (Marketing & IT). Power BI + các báo cáo khác bao gồm hiệu quả kinh doanh, báo cáo marketing và dashboard KPI (IT & BI Team).\n\nLuồng dữ liệu: SAP Business One → ePOS → Power BI → Báo cáo Marketing & Kinh doanh.",
+    body: "SAP Business One is the master data source (purchasing, warehouse, sales, finance, inventory — owned by WH/Purchasing/Sales/Finance/IT). LGD ePOS handles retail sales, promotions, loyalty and store operations (Retail/Marketing/IT). The POSM & TVC Dashboard tracks POSM allocation and TVC scheduling (Marketing & IT). Power BI + other reports cover business performance, marketing reporting and KPI dashboards (IT & BI Team).\n\nData Flow: SAP Business One → ePOS → Power BI → Marketing & Business Reporting.",
+    body_vi: "SAP Business One là nguồn dữ liệu gốc (purchasing, kho, sales, tài chính, tồn kho — thuộc sở hữu của WH/Purchasing/Sales/Finance/IT). LGD ePOS xử lý doanh số retail, khuyến mãi, loyalty và vận hành cửa hàng (Retail/Marketing/IT). POSM & TVC Dashboard theo dõi phân bổ POSM và lịch TVC (Marketing & IT). Power BI + các báo cáo khác bao gồm hiệu quả kinh doanh, báo cáo marketing và dashboard KPI (IT & BI Team).\n\nLuồng dữ liệu: SAP Business One → ePOS → Power BI → Báo cáo Marketing & Kinh doanh.",
     summary_vi: "SAP Business One là nguồn dữ liệu gốc; dữ liệu chảy qua ePOS rồi lên Power BI để phục vụ báo cáo Marketing.",
     source: "Marketing Execution Induction — Databased and System and Business Model — supplied 2026-10-03",
     status: "CURRENT",
@@ -267,11 +267,11 @@ const HANDBOOK_ENTRIES: { id: string; category: string; title: string; body: str
   {
     id: "hb-business-model",
     category: "Other SOP",
-    title: "Longdan Business Model — Core Channels",
-    body: "Retail: 13 Longdan stores, Longdan.co.uk, Kimson.co.uk, Uber Eats, Just Eat & Deliveroo (owned by Retail Operations).\nWholesale: B2B sales, Wholesale Shop, Online Wholesale (Sales Team & Shop Leaders).\nMarketing & A&P: campaigns, supplier partnerships, A&P investment and brand growth (Marketing).\nOEM & Product Development: private-label brands including Sarap Kitchen OEM and new product launches (Marketing & Purchasing).\n\nChannel integration by campaign type (Loyalty/WS, Ecommerce, In-store, Social, Email — all ✓ unless noted): Monthly Campaign, Golden Weeks, Clearance Sales and eNewsletter run across all 5 channels. Longdan Plus excludes Ecommerce. Double Date excludes Loyalty/WS and In-store. Black Friday runs across all 5 channels.",
-    body_vi: "Retail: 13 cửa hàng Longdan, Longdan.co.uk, Kimson.co.uk, Uber Eats, Just Eat & Deliveroo (thuộc Retail Operations).\nWholesale: bán B2B, Wholesale Shop, Online Wholesale (Sales Team & Shop Leaders).\nMarketing & A&P: chiến dịch, hợp tác nhà cung cấp, đầu tư A&P và phát triển thương hiệu (Marketing).\nOEM & Product Development: thương hiệu riêng gồm Sarap Kitchen OEM và sản phẩm mới (Marketing & Purchasing).\n\nTích hợp kênh theo loại chiến dịch (Loyalty/WS, Ecommerce, In-store, Social, Email — tất cả ✓ trừ khi ghi chú): Monthly Campaign, Golden Weeks, Clearance Sales và eNewsletter chạy trên cả 5 kênh. Longdan Plus không có Ecommerce. Double Date không có Loyalty/WS và In-store. Black Friday chạy trên cả 5 kênh.",
-    summary_vi: "Longdan có 4 mảng kinh doanh chính: Retail, Wholesale, Marketing & A&P, và OEM/Product Development.",
-    source: "Marketing Execution Induction — Longdan Business Model — supplied 2026-10-03",
+    title: "LGD Business Model — Core Channels",
+    body: "Retail: 13 LGD stores, LGD.co.uk, Kimson.co.uk, Uber Eats, Just Eat & Deliveroo (owned by Retail Operations).\nWholesale: B2B sales, Wholesale Shop, Online Wholesale (Sales Team & Shop Leaders).\nMarketing & A&P: campaigns, supplier partnerships, A&P investment and brand growth (Marketing).\nOEM & Product Development: private-label brands including Sarap Kitchen OEM and new product launches (Marketing & Purchasing).\n\nChannel integration by campaign type (Loyalty/WS, Ecommerce, In-store, Social, Email — all ✓ unless noted): Monthly Campaign, Golden Weeks, Clearance Sales and eNewsletter run across all 5 channels. LGD Plus excludes Ecommerce. Double Date excludes Loyalty/WS and In-store. Black Friday runs across all 5 channels.",
+    body_vi: "Retail: 13 cửa hàng LGD, LGD.co.uk, Kimson.co.uk, Uber Eats, Just Eat & Deliveroo (thuộc Retail Operations).\nWholesale: bán B2B, Wholesale Shop, Online Wholesale (Sales Team & Shop Leaders).\nMarketing & A&P: chiến dịch, hợp tác nhà cung cấp, đầu tư A&P và phát triển thương hiệu (Marketing).\nOEM & Product Development: thương hiệu riêng gồm Sarap Kitchen OEM và sản phẩm mới (Marketing & Purchasing).\n\nTích hợp kênh theo loại chiến dịch (Loyalty/WS, Ecommerce, In-store, Social, Email — tất cả ✓ trừ khi ghi chú): Monthly Campaign, Golden Weeks, Clearance Sales và eNewsletter chạy trên cả 5 kênh. LGD Plus không có Ecommerce. Double Date không có Loyalty/WS và In-store. Black Friday chạy trên cả 5 kênh.",
+    summary_vi: "LGD có 4 mảng kinh doanh chính: Retail, Wholesale, Marketing & A&P, và OEM/Product Development.",
+    source: "Marketing Execution Induction — LGD Business Model — supplied 2026-10-03",
     status: "CURRENT",
   },
 ];
@@ -329,8 +329,8 @@ const WORKSTREAMS: WorkstreamSeed[] = [
     my_action_vi: "Chuẩn bị → Review → Phối hợp → Setup → Audit → Launch → Cải thiện.",
     handover_to: "Store teams (promotion instructions, signage), POSM team (merchandising alignment), UK Audit Team (compliance review), product owners (rule guidance).",
     handover_to_vi: "Team cửa hàng (hướng dẫn khuyến mãi, biển hiệu), team POSM (căn chỉnh trưng bày), UK Audit Team (kiểm tra tuân thủ), product owner (hướng dẫn quy tắc).",
-    deadline: "Campaign master file: 3–4 weeks before container arrival. Monthly Campaign / Golden Week / Clearance / Longdan Plus submission: 2–3 weeks prior to start (Tue). Weekly/Exceptional & Volume/Category Deal requests: Tue 8PM VN time.",
-    deadline_vi: "File tổng chiến dịch: 3–4 tuần trước khi container về. Nộp Monthly Campaign / Golden Week / Clearance / Longdan Plus: 2–3 tuần trước ngày bắt đầu (Thứ 3). Yêu cầu Weekly/Exceptional & Volume/Category Deal: Thứ 3 8 giờ tối giờ VN.",
+    deadline: "Campaign master file: 3–4 weeks before container arrival. Monthly Campaign / Golden Week / Clearance / LGD Plus submission: 2–3 weeks prior to start (Tue). Weekly/Exceptional & Volume/Category Deal requests: Tue 8PM VN time.",
+    deadline_vi: "File tổng chiến dịch: 3–4 tuần trước khi container về. Nộp Monthly Campaign / Golden Week / Clearance / LGD Plus: 2–3 tuần trước ngày bắt đầu (Thứ 3). Yêu cầu Weekly/Exceptional & Volume/Category Deal: Thứ 3 8 giờ tối giờ VN.",
     output: "Live, correctly-priced promotions on ePOS across all stores; container-driven campaign master file; clearance promotion plan; weekly activation summary to Retail Operations.",
     output_vi: "Khuyến mãi live, đúng giá trên ePOS tại tất cả cửa hàng; file tổng chiến dịch theo container; kế hoạch xả hàng; tóm tắt hoạt động hàng tuần gửi Retail Operations.",
     check_audit: "Weekly live-promotion review (Mon); UK Audit Team field audits; store manager/staff feedback loop resolved promptly.",
@@ -364,7 +364,7 @@ const WORKSTREAMS: WorkstreamSeed[] = [
       "Ghi chú: kế hoạch này ghi Golden Week là 7 lần/năm, mâu thuẫn với rule 6 lần/năm ở Master → Campaign Knowledge → Golden Week. Chưa được đối chiếu — xem cờ Needs Verification ở mục đó.\n\n" +
       "Công cụ hỗ trợ: điều phối Demo (nấu/nếm trực tiếp), bộ công cụ POSM (làm mới hàng tuần theo chiến dịch), màn hình TVC tại cửa hàng (video xoay vòng), lịch sự kiện dùng chung.",
     status: "CURRENT",
-    source: "Marketing Execution Induction + Longdan 2026 Marketing Execution Plan — supplied 2026-10-03 / 2026-10-04",
+    source: "Marketing Execution Induction + LGD 2026 Marketing Execution Plan — supplied 2026-10-03 / 2026-10-04",
   },
   {
     id: "ws-posm-demo-tvc",
@@ -406,15 +406,15 @@ const WORKSTREAMS: WorkstreamSeed[] = [
       "Đây là một chuỗi phụ thuộc (dependency chain), không chỉ đơn giản là nhãn chẵn/lẻ:\nCampaign Execution Date → (tối thiểu 2 tuần trước) → Printed Assets Ready → Odd-week Dispatch → Even-week Display/Execution Preparation.\n\n" +
       "Nếu ngày hoàn thành artwork/in ấn không đáp ứng thời gian chuẩn bị này, task đó nên được gắn cờ At Risk thay vì coi là task bình thường đang đúng tiến độ.",
     status: "CURRENT",
-    source: "Longdan 2026 Marketing Execution Plan — In-store TVC/Demo/POSM + Long-term planning rules — supplied 2026-10-05",
+    source: "LGD 2026 Marketing Execution Plan — In-store TVC/Demo/POSM + Long-term planning rules — supplied 2026-10-05",
   },
   {
     id: "ws-digital",
     pic_name: "Digital Marketing Execution",
     recurring_tasks:
-      "Plans and executes Longdan's digital presence across Social, Website, Email, Online Promotion and Video — content planned at the start of each month, design work done mid-month (every 2 weeks), roughly 7 social posts/week, website banners refreshed weekly for Retail and Wholesale, Retail/Wholesale email sent weekly, and online/Last Mile promotions set up and audited weekly.",
+      "Plans and executes LGD's digital presence across Social, Website, Email, Online Promotion and Video — content planned at the start of each month, design work done mid-month (every 2 weeks), roughly 7 social posts/week, website banners refreshed weekly for Retail and Wholesale, Retail/Wholesale email sent weekly, and online/Last Mile promotions set up and audited weekly.",
     recurring_tasks_vi:
-      "Lên kế hoạch và thực thi hiện diện digital của Longdan trên Social, Website, Email, Online Promotion và Video — content được lên kế hoạch đầu tháng, thiết kế thực hiện giữa tháng (mỗi 2 tuần), khoảng 7 bài Social/tuần, banner website làm mới hàng tuần cho Retail và Wholesale, email Retail/Wholesale gửi hàng tuần, và promotion online/Last Mile được setup và audit hàng tuần.",
+      "Lên kế hoạch và thực thi hiện diện digital của LGD trên Social, Website, Email, Online Promotion và Video — content được lên kế hoạch đầu tháng, thiết kế thực hiện giữa tháng (mỗi 2 tuần), khoảng 7 bài Social/tuần, banner website làm mới hàng tuần cho Retail và Wholesale, email Retail/Wholesale gửi hàng tuần, và promotion online/Last Mile được setup và audit hàng tuần.",
     weekly_timing:
       "Social + Content — plan content at the start of the month; design every 2 weeks / mid-month; ~7 posts/week (Mon+Fri: Promotion, Tue+Sun: Filter/Engagement, Wed+Sat: Video, Thu: Demo). Seeding: every Friday.\n\n" +
       "Website Banners — Mon: schedule Retail banners + Tasting Event page; Mon: schedule Wholesale banners; Tue: audit Shopify backend; Fri: audit website front-end. On campaign end, the banner is hidden but must still be manually deleted afterwards.\n\n" +
@@ -452,7 +452,7 @@ const WORKSTREAMS: WorkstreamSeed[] = [
     important_rules_vi:
       "Hạn chế gia hạn thời gian campaign — nếu bắt buộc phải gia hạn thì chỉ xử lý trong phạm vi ngày được yêu cầu. Banner website cũ phải xóa thủ công sau khi ẩn khi campaign kết thúc — chỉ ẩn là chưa đủ. Audit email gồm Timeline, Content, Link, Online Stock và cross-check Promotion (mục cuối không bắt buộc).",
     status: "CURRENT",
-    source: "Longdan 2026 Marketing Execution Plan — Digital workstream rules — supplied 2026-10-05",
+    source: "LGD 2026 Marketing Execution Plan — Digital workstream rules — supplied 2026-10-05",
   },
   {
     id: "ws-ap-execution",
@@ -484,7 +484,7 @@ const WORKSTREAMS: WorkstreamSeed[] = [
       "Hạng mục chính: Đề xuất A&P (Hàng tháng — brief chiến lược cho kế hoạch thực thi/nguồn lực), Hướng dẫn thực thi (Theo chiến dịch — SOP, thông số tài sản, lịch kênh), Báo cáo Marketing (Hàng tháng/Quý — KPI, ROI, tác động doanh số), Triển khai nội bộ (Hàng tuần — hướng dẫn POSM, brief TVC, thông tin team retail).\n\n" +
       "Luồng vận hành tuần rộng hơn (2026 Execution Plan, góc nhìn liên nhóm): T2 — Lên kế hoạch & Soạn nội dung; T3 — Review POSM & Tạo eNews; T4 — Setup khuyến mãi & Thông báo chiến dịch; T5 — Gửi hướng dẫn & Cập nhật web; T6 — Audit, Gửi eNews, Thông báo Demo. Đây là tóm tắt liên nhóm rộng hơn, không thay thế nhịp làm việc riêng của A&P ở trên.",
     status: "CURRENT",
-    source: "Marketing Execution Induction + Longdan 2026 Marketing Execution Plan — supplied 2026-10-03 / 2026-10-04",
+    source: "Marketing Execution Induction + LGD 2026 Marketing Execution Plan — supplied 2026-10-03 / 2026-10-04",
   },
   {
     id: "ws-ops-marketing",
@@ -577,7 +577,7 @@ const CAMPAIGN_RULES: CampaignRuleSeed[] = [
     summary: "Define operation type → product list → supporting products → POSM/TVC → internal coordination → pre-demo sign-off.",
     body:
       "Objective: deliver smooth, engaging, compliant in-store demos aligned with campaign calendars, stock availability and POSM/TVC rollouts.\n\n" +
-      "1. Define Demo Operation Type — By Longdan Staff (confirm date/store per Marketing Calendar, coordinate rota with UK HR ≥7 days ahead, ensure product training/storytelling briefing); By Supplier (confirm with supplier + A&P, share demo SOPs/arrival time/product list, arrange site access and equipment); By Agent/Third Party (confirm schedule, merge multiple suppliers if applicable, provide product info/allergen sheets/store contacts).\n\n" +
+      "1. Define Demo Operation Type — By LGD Staff (confirm date/store per Marketing Calendar, coordinate rota with UK HR ≥7 days ahead, ensure product training/storytelling briefing); By Supplier (confirm with supplier + A&P, share demo SOPs/arrival time/product list, arrange site access and equipment); By Agent/Third Party (confirm schedule, merge multiple suppliers if applicable, provide product info/allergen sheets/store contacts).\n\n" +
       "2. Define Product Demo List — select from supplier launches, hero/seasonal bestsellers, or low-sales/high-stock SKUs; confirm stock levels per store via SAP + Stock Team before approving any SKU.\n\n" +
       "3. Select Supporting Products (cross-selling) — pair hero SKUs with basket-building items/OEM brands; confirm stock with Product Owners + store ops.\n\n" +
       "4. POSM & TVC Preparation — confirm formats (A3 Poster, TVC loop 15–20s, landscape banner, social assets 1080×1080, shelf talkers, wobblers, A4 allergy poster — mandatory, tentcard/mini poster); coordinate with Design Team for visuals/theme/tone; align with TVC Team for in-store screens; ensure food-safety signage is printed.\n\n" +
@@ -586,7 +586,7 @@ const CAMPAIGN_RULES: CampaignRuleSeed[] = [
       "Final 2-Day Pre-Demo Checklist: staff/agent rota confirmed; stock levels checked; POSM printed & delivered; allergy posters/tentcards printed; store manager briefed; demo products delivered; cooking tools prepped; sampling cups/gloves/napkins ready; AI-generated copy reviewed; TVC content updated.",
     body_vi:
       "Mục tiêu: tổ chức demo tại cửa hàng suôn sẻ, hấp dẫn, tuân thủ quy định, phù hợp với lịch chiến dịch, tình trạng tồn kho và triển khai POSM/TVC.\n\n" +
-      "1. Xác định loại hình Demo — Do nhân viên Longdan (xác nhận ngày/shop theo Marketing Calendar, phối hợp rota với UK HR trước ≥7 ngày, đảm bảo briefing đào tạo sản phẩm/storytelling); Do nhà cung cấp (xác nhận với supplier + A&P, chia sẻ SOP demo/giờ đến/danh sách sản phẩm, sắp xếp quyền vào cửa hàng và thiết bị); Do Agent/Bên thứ ba (xác nhận lịch, gộp nhiều nhà cung cấp nếu phù hợp, cung cấp thông tin sản phẩm/bảng dị ứng/liên hệ shop).\n\n" +
+      "1. Xác định loại hình Demo — Do nhân viên LGD (xác nhận ngày/shop theo Marketing Calendar, phối hợp rota với UK HR trước ≥7 ngày, đảm bảo briefing đào tạo sản phẩm/storytelling); Do nhà cung cấp (xác nhận với supplier + A&P, chia sẻ SOP demo/giờ đến/danh sách sản phẩm, sắp xếp quyền vào cửa hàng và thiết bị); Do Agent/Bên thứ ba (xác nhận lịch, gộp nhiều nhà cung cấp nếu phù hợp, cung cấp thông tin sản phẩm/bảng dị ứng/liên hệ shop).\n\n" +
       "2. Xác định danh sách sản phẩm Demo — chọn từ sản phẩm mới ra mắt, hero/bán chạy theo mùa, hoặc SKU bán chậm/tồn cao; xác nhận tồn kho từng shop qua SAP + Stock Team trước khi duyệt bất kỳ SKU nào.\n\n" +
       "3. Chọn sản phẩm hỗ trợ (cross-selling) — ghép SKU hero với sản phẩm xây giỏ hàng/thương hiệu OEM; xác nhận tồn kho với Product Owners + vận hành shop.\n\n" +
       "4. Chuẩn bị POSM & TVC — xác nhận định dạng (Poster A3, TVC loop 15–20s, banner ngang, tài sản social 1080×1080, shelf talker, wobbler, poster dị ứng A4 — bắt buộc, tentcard/mini poster); phối hợp với team Design về hình ảnh/chủ đề/tông; liên hệ team TVC cho màn hình tại cửa hàng; đảm bảo biển an toàn thực phẩm được in.\n\n" +
@@ -597,12 +597,12 @@ const CAMPAIGN_RULES: CampaignRuleSeed[] = [
   },
   {
     id: "cr-website-banners-retail",
-    rule_name: "Website Banner Ideas — Retail (Longdan.co.uk)",
+    rule_name: "Website Banner Ideas — Retail (LGD.co.uk)",
     category: "Digital Reference",
     summary: "Lifestyle/emotional banner concepts for B2C — Monthly Campaign Hero, Double Date Flash Sales, Clearance Countdown, eNewsletter, festive events.",
     body:
       "Goal: inspire shopping, highlight promotions, drive seasonal engagement. Tone: warm, lifestyle-driven, emotional, festive.\n\n" +
-      "1. Monthly Campaign Hero — seasonal hero products (sakura sweets in March, BBQ kits in June, kimchi bundles in September). Message: \"Celebrate [Season] with authentic [Cuisine] flavours at Longdan.\" CTA: Shop Now.\n\n" +
+      "1. Monthly Campaign Hero — seasonal hero products (sakura sweets in March, BBQ kits in June, kimchi bundles in September). Message: \"Celebrate [Season] with authentic [Cuisine] flavours at LGD.\" CTA: Shop Now.\n\n" +
       "2. Double Date Flash Sales — bold numeric design (2.2, 3.3, 4.4...) with product highlights. Message: \"One day only! [Date] Flash Sale.\" CTA: See Deals.\n\n" +
       "3. Clearance Countdown — clock/timer + stock pile imagery. Message: \"Stock Rotation Sale — Last Chance for [Category]!\" CTA: Clearance Shop.\n\n" +
       "4. eNewsletter Promo — friendly table-top food styling. Message: \"Discover seasonal recipes, tips & deals.\" CTA: Join the List.\n\n" +
@@ -618,20 +618,20 @@ const CAMPAIGN_RULES: CampaignRuleSeed[] = [
   },
   {
     id: "cr-website-banners-wholesale",
-    rule_name: "Website Banner Ideas — Wholesale (LongdanWholesale.co.uk)",
+    rule_name: "Website Banner Ideas — Wholesale (LGDWholesale.co.uk)",
     category: "Digital Reference",
-    summary: "ROI/efficiency-driven banner concepts for B2B — Longdan Plus, bulk Monthly Campaign angle, Clearance/Overstock, Double Date trade, Anniversary.",
+    summary: "ROI/efficiency-driven banner concepts for B2B — LGD Plus, bulk Monthly Campaign angle, Clearance/Overstock, Double Date trade, Anniversary.",
     body:
       "Goal: encourage bulk purchasing, loyalty program sign-ups, stock-up events. Tone: professional, efficient, ROI-driven, practical.\n\n" +
-      "1. Longdan Plus Program (LP) — pallet-style stock, wholesale packs. Message: \"Exclusive Hampers & Wholesale Pricing for Members.\" CTA: Join Longdan Plus.\n\n" +
+      "1. LGD Plus Program (LP) — pallet-style stock, wholesale packs. Message: \"Exclusive Hampers & Wholesale Pricing for Members.\" CTA: Join LGD Plus.\n\n" +
       "2. Monthly Campaign with Bulk Angle — Feb/Tet: \"Wholesale Tet Hampers.\" Jun/Summer: \"Summer BBQ Essentials in Bulk.\" Sep/Chuseok: \"Member-Only Bundles: Kimchi & Rice Cakes.\"\n\n" +
       "3. Clearance / Overstock Deals — warehouse shelves, stacked cartons. Message: \"Mid-Year Overstock Clearance — Trade-Only Savings.\" CTA: View Clearance.\n\n" +
       "4. Double Date Trade Specials — calendar overlay + product bundles. Message: \"[Date] Bulk Flash Sale — Stock Smart, Save Big.\" CTA: Buy in Bulk.\n\n" +
-      "5. Anniversary / Loyalty Rewards — 20-year legacy seal, handshake imagery. Message: \"20 Years with Longdan — Thank You for Partnering with Us.\" CTA: Shop Anniversary Deals.\n\n" +
+      "5. Anniversary / Loyalty Rewards — 20-year legacy seal, handshake imagery. Message: \"20 Years with LGD — Thank You for Partnering with Us.\" CTA: Shop Anniversary Deals.\n\n" +
       "Key difference from Retail: wholesale banners lead with efficiency and value (bulk pricing, loyalty, margin growth), not lifestyle/emotion.",
     body_vi:
       "Mục tiêu: khuyến khích mua số lượng lớn, đăng ký chương trình loyalty, sự kiện gom hàng. Tông giọng: chuyên nghiệp, hiệu quả, hướng ROI, thực tế. Các mẫu message/CTA dưới đây là bản nháp tiếng Anh dùng trực tiếp trên website — giữ nguyên không dịch.\n\n" +
-      "1. Longdan Plus Program (LP) — hình ảnh hàng pallet, gói wholesale.\n\n" +
+      "1. LGD Plus Program (LP) — hình ảnh hàng pallet, gói wholesale.\n\n" +
       "2. Monthly Campaign góc nhìn mua sỉ — theo từng tháng/dịp (Tết, Hè, Chuseok).\n\n" +
       "3. Clearance / Overstock Deals — hình ảnh kệ kho, thùng carton xếp chồng.\n\n" +
       "4. Double Date Trade Specials — lịch + combo sản phẩm.\n\n" +
@@ -704,7 +704,7 @@ export function seedMasterKnowledge(db: Database.Database): void {
          notes = excluded.notes, explanation_vi = excluded.explanation_vi, status = excluded.status, last_updated = datetime('now')`
     );
     CAMPAIGN_TYPES.forEach((c, i) => {
-      insertCampaignType.run({ ...c, notes: c.notes ?? null, year: 2026, effective_period: "2026 — current", source: "Longdan campaign taxonomy rules — supplied 2026-10-01", status: c.status ?? "CURRENT", sort_order: i });
+      insertCampaignType.run({ ...c, notes: c.notes ?? null, year: 2026, effective_period: "2026 — current", source: "LGD campaign taxonomy rules — supplied 2026-10-01", status: c.status ?? "CURRENT", sort_order: i });
     });
 
     const insertStep = db.prepare(
@@ -766,7 +766,7 @@ export function seedMasterKnowledge(db: Database.Database): void {
          rule_name = excluded.rule_name, category = excluded.category, summary = excluded.summary, body = excluded.body,
          body_vi = excluded.body_vi, status = excluded.status, last_updated = datetime('now')`
     );
-    CAMPAIGN_RULES.forEach((r, i) => insertCampaignRule.run({ ...r, body_vi: r.body_vi ?? null, source: "Longdan 2026 Marketing Execution Plan — supplied 2026-10-04", sort_order: i }));
+    CAMPAIGN_RULES.forEach((r, i) => insertCampaignRule.run({ ...r, body_vi: r.body_vi ?? null, source: "LGD 2026 Marketing Execution Plan — supplied 2026-10-04", sort_order: i }));
   });
   tx();
 }

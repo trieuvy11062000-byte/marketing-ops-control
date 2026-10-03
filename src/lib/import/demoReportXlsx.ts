@@ -22,15 +22,15 @@ function toNum(v: unknown): number | null {
 }
 
 /** Normalises store naming inconsistencies in the source tracker (e.g. "Staines"
- *  vs "Longdan Staines", "Maidstone" vs "Longdan Maidstone") to a single
+ *  vs "LGD Staines", "Maidstone" vs "LGD Maidstone") to a single
  *  canonical form per store — the same normalisation the evaluation report
  *  itself applies by hand, generalised so it's never store-specific. */
 export function normalizeStoreName(raw: string): string {
-  const stripped = raw.replace(/^longdan\s+/i, "").trim();
+  const stripped = raw.replace(/^lgd\s+/i, "").trim();
   const titled = stripped
     .toLowerCase()
     .replace(/\b\w/g, (c) => c.toUpperCase());
-  return `Longdan ${titled}`;
+  return `LGD ${titled}`;
 }
 
 // ── Week detection ───────────────────────────────────────────────────────────
@@ -55,7 +55,7 @@ export function detectWeekFromWorkbook(wb: XLSX.WorkBook): string | null {
   return null;
 }
 
-/** Detects a week code from a filename like "W39_DEMO.xlsx" or "W39_Longdan_...pdf". */
+/** Detects a week code from a filename like "W39_DEMO.xlsx" or "W39_LGD_...pdf". */
 export function detectWeekFromFileName(fileName: string): string | null {
   const m = fileName.match(/^W(\d{1,2})[\s_.\-]/i) ?? fileName.match(/\bW(\d{1,2})\b/i);
   return m ? `W${m[1].padStart(2, "0")}` : null;

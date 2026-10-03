@@ -19,17 +19,17 @@ export function seedProjects(db: Database.Database): void {
          next_action = excluded.next_action, last_updated = datetime('now')`
     ).run({
       id: "proj-hosan-at-korea",
-      name: "HOSAN × aT Korea × Longdan",
+      name: "HOSAN × aT Korea × LGD",
       project_type: "Supplier-funded Marketing / aT Funding Programme",
       partner: "Hosan",
       funding_source: "aT Korea via Hosan",
-      execution_company: "Longdan",
+      execution_company: "LGD",
       period_start: "2026-10-15",
       period_end: "2026-11-30",
       current_stage: "Preparation / Execution",
       overall_status: "Execution",
       summary:
-        "Longdan executes the Hosan marketing programme under aT Korea funding, combining aT-funded activities and separate Hosan-owned marketing support. Main execution: 36 demo sessions, Branded Golden Week, Branded Shelf Line, POSM, Ambient and Frozen product activation, evidence collection, reporting and funding claim. The two funding streams must remain separate.",
+        "LGD executes the Hosan marketing programme under aT Korea funding, combining aT-funded activities and separate Hosan-owned marketing support. Main execution: 36 demo sessions, Branded Golden Week, Branded Shelf Line, POSM, Ambient and Frozen product activation, evidence collection, reporting and funding claim. The two funding streams must remain separate.",
       next_action: "Finalise execution schedule, POSM and demo preparation based on stock arrival.",
       main_store_scope: "6 stores",
       main_product_focus: "Hosan / A+ Portfolio — Frozen priority: A+ Mandu",
@@ -46,9 +46,9 @@ export function seedProjects(db: Database.Database): void {
        ON CONFLICT(id) DO UPDATE SET amount = excluded.amount, status = excluded.status`
     );
     [
-      { id: "fund-at-korea", funding_label: "aT Korea Funding", amount: "26,531 ±5%", currency: "USD", flow: "aT Korea → Hosan → Longdan", contribution_note: "Refund/Contribution: 10% — estimated Longdan real receive approx. USD 23,878 ±5%", status: "CONFIRMED" },
-      { id: "fund-hosan-ambient", funding_label: "Hosan-owned Funding — Ambient", amount: "1,254", currency: "USD", flow: "Hosan → Longdan", contribution_note: null, status: "CONFIRMED" },
-      { id: "fund-hosan-frozen", funding_label: "Hosan-owned Funding — Frozen", amount: "2,309.40", currency: "USD", flow: "Hosan → Longdan", contribution_note: null, status: "CONFIRMED" },
+      { id: "fund-at-korea", funding_label: "aT Korea Funding", amount: "26,531 ±5%", currency: "USD", flow: "aT Korea → Hosan → LGD", contribution_note: "Refund/Contribution: 10% — estimated LGD real receive approx. USD 23,878 ±5%", status: "CONFIRMED" },
+      { id: "fund-hosan-ambient", funding_label: "Hosan-owned Funding — Ambient", amount: "1,254", currency: "USD", flow: "Hosan → LGD", contribution_note: null, status: "CONFIRMED" },
+      { id: "fund-hosan-frozen", funding_label: "Hosan-owned Funding — Frozen", amount: "2,309.40", currency: "USD", flow: "Hosan → LGD", contribution_note: null, status: "CONFIRMED" },
     ].forEach((f, i) => insertFunding.run({ ...f, project_id: pid, sort_order: i }));
 
     // Workstreams hierarchy.
@@ -58,7 +58,7 @@ export function seedProjects(db: Database.Database): void {
        ON CONFLICT(id) DO UPDATE SET detail = excluded.detail, status = excluded.status`
     );
     [
-      { id: "ws-funding", workstream_name: "Funding", detail: "aT funding + Hosan-owned funding + Longdan contribution, invoice, reimbursement, claim", status: "Confirmed", linked_campaign_id: null, linked_brand_id: null },
+      { id: "ws-funding", workstream_name: "Funding", detail: "aT funding + Hosan-owned funding + LGD contribution, invoice, reimbursement, claim", status: "Confirmed", linked_campaign_id: null, linked_brand_id: null },
       { id: "ws-stock-ambient", workstream_name: "Stock / Logistics — Ambient", detail: "ETD 16 Aug 2026 / ETA 30 Sep 2026 — Activation October", status: "On Board / Planned", linked_campaign_id: null, linked_brand_id: "A" },
       { id: "ws-stock-frozen", workstream_name: "Stock / Logistics — Frozen", detail: "ETD 5 Sep 2026 / ETA approx. 30 Oct 2026 — Activation after stock arrival. Priority: A+ Mandu", status: "ETA Estimated", linked_campaign_id: null, linked_brand_id: "A" },
       { id: "ws-campaign", workstream_name: "Campaign — Branded Golden Week (Chuseok Bundle)", detail: "16 Oct – 1 Nov 2026", status: "Agreed", linked_campaign_id: null, linked_brand_id: "A" },
@@ -216,7 +216,7 @@ export function seedProjects(db: Database.Database): void {
       `INSERT INTO projects (id, name, project_type, partner, funding_source, execution_company, period_start, period_end,
           current_stage, overall_status, failure_reason, pic, summary, next_action, main_store_scope, main_product_focus,
           brand_id, source_file)
-       VALUES (@id, @name, @project_type, NULL, @funding_source, 'Longdan', @period_start, @period_end,
+       VALUES (@id, @name, @project_type, NULL, @funding_source, 'LGD', @period_start, @period_end,
           @current_stage, @overall_status, @failure_reason, NULL, @summary, NULL, NULL, NULL, NULL, @source_file)
        ON CONFLICT(id) DO UPDATE SET overall_status = excluded.overall_status, failure_reason = excluded.failure_reason`
     ).run({
@@ -230,7 +230,7 @@ export function seedProjects(db: Database.Database): void {
       overall_status: "Failed",
       failure_reason: "Proposal was not submitted before the required deadline.",
       summary:
-        "Proposed aT-funded New Year promotional support programme for Longdan stores. Proposal was not submitted before the required deadline. Kept as historical reference for future sponsorship/tender projects — never converted to Completed.",
+        "Proposed aT-funded New Year promotional support programme for LGD stores. Proposal was not submitted before the required deadline. Kept as historical reference for future sponsorship/tender projects — never converted to Completed.",
       source_file: "Projects spec — supplied 2026-10-02",
     });
 
@@ -240,7 +240,7 @@ export function seedProjects(db: Database.Database): void {
       section_key: "ORIGINAL_PROPOSAL_SCOPE",
       title: "Original Proposal Scope",
       body: [
-        "Korean Festival in Longdan stores",
+        "Korean Festival in LGD stores",
         "Lunar New Year Korean Market",
         "9 Korean product combo concepts",
         "Mystery Shopping Bag",
@@ -248,7 +248,7 @@ export function seedProjects(db: Database.Database): void {
         "Lucky Wheel",
         "Monthly campaigns",
         "Golden Week",
-        "Longdan Plus",
+        "LGD Plus",
         "Last-mile platforms",
         "36 demo sessions",
         "Branded Shelf Line",

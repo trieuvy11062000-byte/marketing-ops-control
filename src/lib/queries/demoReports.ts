@@ -310,7 +310,7 @@ export function getWeeklyDemoReportDetail(weekCode: string): WeeklyDemoReportDet
 }
 
 function shortStoreName(location: string): string {
-  return location.replace(/^longdan\s+/i, "").trim() || location;
+  return location.replace(/^lgd\s+/i, "").trim() || location;
 }
 
 /** Generates the compact Executive Summary — Performance / Best / Issue /

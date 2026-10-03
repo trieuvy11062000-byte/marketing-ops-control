@@ -9,7 +9,7 @@ export interface CoverageRow {
   reason?: string; // required when status is NOT USED or PARTIAL
 }
 
-const MARKETING_CALENDAR = "2026 Longdan Marketing Calendar.xlsx";
+const MARKETING_CALENDAR = "2026 LGD Marketing Calendar.xlsx";
 const PROMO_MASTER = "Promotion Master File.xlsx";
 const MONTHLY_PROMO_SEP = "SEP-26 MKT Monthly Promotion.xlsx";
 const MONTHLY_PROMO_OCT = "OCT-26 MKT Monthly Promotion.xlsx";

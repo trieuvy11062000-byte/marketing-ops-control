@@ -11,8 +11,8 @@ const kanit = Kanit({
 });
 
 export const metadata: Metadata = {
-  title: "Marketing Operations Control — Longdan",
-  description: "Marketing operations control app for Longdan 2026",
+  title: "Marketing Operations Control — LGD",
+  description: "Marketing operations control app for LGD 2026",
 };
 
 export default async function RootLayout({ children }: LayoutProps<"/">) {

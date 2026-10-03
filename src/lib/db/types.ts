@@ -182,7 +182,7 @@ export interface ApPackage {
   period_start: string | null;
   period_end: string | null;
   total_value: number | null;
-  longdan_fund: number | null;
+  lgd_fund: number | null;
   brand_investment: number | null;
   status: "IN DELIVERY" | "COMPLETED" | "AWAITING PROPOSAL";
   source_file: string;

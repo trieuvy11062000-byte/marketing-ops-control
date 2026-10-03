@@ -147,10 +147,10 @@ export async function importDemoReportFiles(db: Database.Database, files: Upload
   // Known brand/store names for this week — used to detect which brand/store
   // each action card refers to so it can be condensed to "Brand @ Store — action".
   const knownBrands = [...new Set(allPerfRows.map((r) => r.row.brandRaw).filter(Boolean))];
-  const knownStores = [...new Set(allPerfRows.map((r) => r.row.location.replace(/^longdan\s+/i, "").trim()))];
+  const knownStores = [...new Set(allPerfRows.map((r) => r.row.location.replace(/^lgd\s+/i, "").trim()))];
   const storeToBrand = new Map<string, string>();
   for (const { row } of allPerfRows) {
-    const store = row.location.replace(/^longdan\s+/i, "").trim();
+    const store = row.location.replace(/^lgd\s+/i, "").trim();
     if (row.brandRaw && !storeToBrand.has(store)) storeToBrand.set(store, row.brandRaw);
   }
 

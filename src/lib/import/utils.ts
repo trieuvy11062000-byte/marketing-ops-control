@@ -40,7 +40,7 @@ export interface ParsedCampaignCode {
 const KNOWN_TYPES: Record<string, string> = {
   MO: "Monthly Campaign",
   GW: "Golden Week",
-  LP: "Longdan Plus",
+  LP: "LGD Plus",
   LM: "Last Mile",
   DD: "Double Date",
   Clearance: "Clearance Sales",
@@ -52,7 +52,7 @@ const KNOWN_TYPES: Record<string, string> = {
   ER: "Email/Retail",
 };
 
-/** Parses Longdan campaign codes like "MO-Halloween-Oct26-W40" or "Clearance-Jul26-W27". */
+/** Parses LGD campaign codes like "MO-Halloween-Oct26-W40" or "Clearance-Jul26-W27". */
 export function parseCampaignCode(raw: string): ParsedCampaignCode {
   const parts = raw.split("-").map((p) => p.trim()).filter(Boolean);
   const weekPart = parts.find((p) => /^W\d{1,2}$/i.test(p)) ?? null;
@@ -107,7 +107,7 @@ import type { ActivationType } from "../db/types";
 
 /** Deterministic classification only — no invented driver beyond what the campaign_type itself implies.
  *  A. Core Campaign: Monthly Campaign, Golden Week.
- *  B. Commercial Programme: Clearance, Longdan Plus, Double Date, Volume/Category Deal.
+ *  B. Commercial Programme: Clearance, LGD Plus, Double Date, Volume/Category Deal.
  *  C. Tactical Activation: everything else (Special Offer, weekly/exceptional codes, unrecognised types). */
 const CORE_TYPES = new Set(["MO", "GW"]);
 const COMMERCIAL_TYPES = new Set(["Clearance", "LP", "DD", "VDQ", "VDQ3", "VDQ4", "CD"]);

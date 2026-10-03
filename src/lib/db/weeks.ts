@@ -1,4 +1,4 @@
-// Longdan operates on a Friday-start retail week. Confirmed from source data:
+// LGD operates on a Friday-start retail week. Confirmed from source data:
 // Demo26 sheet: "W01" -> FRI 2026-01-02. Email+Web27 header: "WEEK START-FRI".
 // W01 2026 starts Friday 2 Jan 2026.
 

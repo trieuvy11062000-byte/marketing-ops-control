@@ -31,7 +31,7 @@ export function classifyActivity(input: {
       return { activityType: "CAMPAIGN", activityLabel: CAMPAIGN_CODE_LABELS[campaignType] };
     }
     if (campaignType === "LP") {
-      return { activityType: "PROMOTION", activityLabel: "Longdan Plus" };
+      return { activityType: "PROMOTION", activityLabel: "LGD Plus" };
     }
     if (campaignType === "Clearance") {
       return { activityType: "PROMOTION", activityLabel: "Clearance" };

@@ -43,7 +43,7 @@ export function Sidebar({ lang }: { lang: Lang }) {
   return (
     <aside className="hidden md:flex w-[230px] shrink-0 flex-col border-r border-glass-border bg-surface/60 px-3 py-4">
       <div className="px-3 pb-6">
-        <div className="text-[15px] font-semibold tracking-tight">Longdan</div>
+        <div className="text-[15px] font-semibold tracking-tight">LGD</div>
         <div className="text-[11px] font-mono-tag text-foreground-muted uppercase">
           {lang === "vi" ? "Điều hành Marketing" : "Marketing Ops Control"}
         </div>

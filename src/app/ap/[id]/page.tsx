@@ -71,8 +71,8 @@ function ProposalTab({ pkg }: { pkg: NonNullable<ReturnType<typeof getApPackage>
           <div className="font-mono-tag text-[16px] font-bold mt-1">{pkg.brand_investment != null ? `$${pkg.brand_investment.toLocaleString()}` : "—"}</div>
         </div>
         <div>
-          <div className="font-mono-tag text-[10px] uppercase text-foreground-muted">Longdan Investment</div>
-          <div className="font-mono-tag text-[16px] font-bold mt-1">{pkg.longdan_fund != null ? `$${pkg.longdan_fund.toLocaleString()}` : "—"}</div>
+          <div className="font-mono-tag text-[10px] uppercase text-foreground-muted">LGD Investment</div>
+          <div className="font-mono-tag text-[16px] font-bold mt-1">{pkg.lgd_fund != null ? `$${pkg.lgd_fund.toLocaleString()}` : "—"}</div>
         </div>
       </section>
 
