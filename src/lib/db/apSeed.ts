@@ -10,9 +10,10 @@ const SOURCE = "A&P restructure spec — supplied 2026-10-02";
  *  terms are supplied. */
 export function seedApExamples(db: Database.Database): void {
   const packageId = "APKG-DONGWON";
+  const brandId = db.prepare("SELECT id FROM brands WHERE id = ?").get("DONGWON") ? "DONGWON" : null;
   upsertApPackage(db, {
     id: packageId,
-    brand_id: "DONGWON",
+    brand_id: brandId,
     name: "Dongwon",
     period_start: null,
     period_end: null,
@@ -35,7 +36,7 @@ export function seedApExamples(db: Database.Database): void {
       reported: 0,
       status: "PENDING",
       source_module: null,
-      link_brand_id: "DONGWON",
+      link_brand_id: brandId,
       source_file: SOURCE,
       source_sheet: "A&P spec example",
     });

@@ -7,7 +7,9 @@ import { seedProjects } from "./projectSeed";
 import { seedApExamples } from "./apSeed";
 import { backfillBrandLinks } from "./crossLinkBackfill";
 
-const DB_PATH = path.join(process.cwd(), "data", "marketing_ops.db");
+const DB_PATH = process.env.VERCEL === "1"
+  ? path.join("/tmp", "marketing_ops.db")
+  : path.join(process.cwd(), "data", "marketing_ops.db");
 const SCHEMA_PATH = path.join(process.cwd(), "src", "lib", "db", "schema.sql");
 
 declare global {

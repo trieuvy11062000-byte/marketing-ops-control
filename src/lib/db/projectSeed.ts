@@ -5,6 +5,7 @@ import type Database from "better-sqlite3";
  *  Programme (failed — kept as history, never deleted or converted). Every
  *  field not explicitly given in the source stays null rather than invented. */
 export function seedProjects(db: Database.Database): void {
+  const brandId = db.prepare("SELECT id FROM brands WHERE id = ?").get("A") ? "A" : null;
   const tx = db.transaction(() => {
     // ── PROJECT 01 — HOSAN × aT Korea ───────────────────────────────────────
     db.prepare(
@@ -33,7 +34,7 @@ export function seedProjects(db: Database.Database): void {
       next_action: "Finalise execution schedule, POSM and demo preparation based on stock arrival.",
       main_store_scope: "6 stores",
       main_product_focus: "Hosan / A+ Portfolio — Frozen priority: A+ Mandu",
-      brand_id: "A",
+      brand_id: brandId,
       source_file: "Projects spec — supplied 2026-10-02",
     });
 
@@ -59,12 +60,12 @@ export function seedProjects(db: Database.Database): void {
     );
     [
       { id: "ws-funding", workstream_name: "Funding", detail: "aT funding + Hosan-owned funding + LGD contribution, invoice, reimbursement, claim", status: "Confirmed", linked_campaign_id: null, linked_brand_id: null },
-      { id: "ws-stock-ambient", workstream_name: "Stock / Logistics — Ambient", detail: "ETD 16 Aug 2026 / ETA 30 Sep 2026 — Activation October", status: "On Board / Planned", linked_campaign_id: null, linked_brand_id: "A" },
-      { id: "ws-stock-frozen", workstream_name: "Stock / Logistics — Frozen", detail: "ETD 5 Sep 2026 / ETA approx. 30 Oct 2026 — Activation after stock arrival. Priority: A+ Mandu", status: "ETA Estimated", linked_campaign_id: null, linked_brand_id: "A" },
-      { id: "ws-campaign", workstream_name: "Campaign — Branded Golden Week (Chuseok Bundle)", detail: "16 Oct – 1 Nov 2026", status: "Agreed", linked_campaign_id: null, linked_brand_id: "A" },
-      { id: "ws-instore", workstream_name: "In-store — Branded Shelf Line", detail: "15 Oct 2026 – 15 Jan 2027 (3 months) — separate timeline from Golden Week", status: "Agreed", linked_campaign_id: null, linked_brand_id: "A" },
-      { id: "ws-demo", workstream_name: "Demo — Ambient / Frozen", detail: "36 sessions (12 Oct + 24 Nov) — latest agreed plan", status: "Latest Agreed Plan", linked_campaign_id: null, linked_brand_id: "A" },
-      { id: "ws-posm", workstream_name: "POSM", detail: "Apron, Table Runner, Keychain, Roller Banner, Wobbler, Shelf Strip", status: "Agreed", linked_campaign_id: null, linked_brand_id: "A" },
+      { id: "ws-stock-ambient", workstream_name: "Stock / Logistics — Ambient", detail: "ETD 16 Aug 2026 / ETA 30 Sep 2026 — Activation October", status: "On Board / Planned", linked_campaign_id: null, linked_brand_id: brandId },
+      { id: "ws-stock-frozen", workstream_name: "Stock / Logistics — Frozen", detail: "ETD 5 Sep 2026 / ETA approx. 30 Oct 2026 — Activation after stock arrival. Priority: A+ Mandu", status: "ETA Estimated", linked_campaign_id: null, linked_brand_id: brandId },
+      { id: "ws-campaign", workstream_name: "Campaign — Branded Golden Week (Chuseok Bundle)", detail: "16 Oct – 1 Nov 2026", status: "Agreed", linked_campaign_id: null, linked_brand_id: brandId },
+      { id: "ws-instore", workstream_name: "In-store — Branded Shelf Line", detail: "15 Oct 2026 – 15 Jan 2027 (3 months) — separate timeline from Golden Week", status: "Agreed", linked_campaign_id: null, linked_brand_id: brandId },
+      { id: "ws-demo", workstream_name: "Demo — Ambient / Frozen", detail: "36 sessions (12 Oct + 24 Nov) — latest agreed plan", status: "Latest Agreed Plan", linked_campaign_id: null, linked_brand_id: brandId },
+      { id: "ws-posm", workstream_name: "POSM", detail: "Apron, Table Runner, Keychain, Roller Banner, Wobbler, Shelf Strip", status: "Agreed", linked_campaign_id: null, linked_brand_id: brandId },
       { id: "ws-evidence", workstream_name: "Evidence", detail: "Collected during execution, Oct–Nov 2026", status: "In Progress", linked_campaign_id: null, linked_brand_id: null },
       { id: "ws-invoice", workstream_name: "Invoice", detail: null, status: "Needs Verification", linked_campaign_id: null, linked_brand_id: null },
       { id: "ws-report-claim", workstream_name: "aT Report / Claim", detail: "Final documents due end Nov / early Dec 2026", status: "Planned", linked_campaign_id: null, linked_brand_id: null },
